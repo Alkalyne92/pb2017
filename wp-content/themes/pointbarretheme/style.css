@@ -33,7 +33,7 @@ body{
 font-family: "minerva-modern",sans-serif;
 font-style: normal;
 font-weight: 400; 
-background-color: #000000 !important;
+background-color: #ffffff !important;
 color: red;
  background: red;
  -webkit-background-size: cover;
@@ -46,16 +46,17 @@ color: red;
 
 #baseline {
 position            : absolute;
-left                : 50%;
+right               : 10%;
 width               : 60%;
 max-width           : 250px;
 transform           : translateX(-50%);
-top                 : 30vh;
+top                 : 10vh;
+text-align: left !important;
 /* 
 Pour logos svg
 fill	: #d34549;	*/
-color: #fff;
-text-align: center;
+color: #000;
+
 }
 
 

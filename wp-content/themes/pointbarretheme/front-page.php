@@ -1,14 +1,6 @@
 <?php get_header(); ?>
 
-
-
-<div id="baseline">
-		<p>
-			Ceci est notre homepage<br>
-			mais comme elle est pas conne, elle affiche le footer etc
-		</p>
-</div>
-
+<!--
 <div id="nav-projets">
 		<h2>Projets swag</h2>
 		<?php
@@ -25,6 +17,8 @@
 			<h3><a class="openproject" data-permalink="<?php the_permalink(); ?> "href="#"> <?php the_title(); ?></a></h3>
 		<?php endwhile; ?>
 </div>
+
+-->
 
 <div class="fullscreenproject"> </div>
 <?php get_footer(); ?>
