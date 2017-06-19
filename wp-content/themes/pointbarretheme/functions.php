@@ -1,6 +1,7 @@
 <?php
 
 require_once(ABSPATH.'wp-content/themes/pointbarretheme/types/projets.php');
+require_once(ABSPATH.'wp-content/themes/pointbarretheme/types/citations.php');
 
 function add_js_scripts()
 {
