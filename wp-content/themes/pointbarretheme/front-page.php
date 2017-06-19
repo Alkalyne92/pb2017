@@ -23,7 +23,7 @@
 				<?php $quotequery = new WP_Query(array("post_type" => "Citations", "orderby" => "rand", "posts_per_page" => 1));
 					if ($quotequery->have_posts()) : while ($quotequery->have_posts()) : $quotequery->the_post(); ?>
 					<p id="quote"><?php the_content(); ?></p>
-					<p id="author"><?php the_title(); ?></p>
+					<p id="author">&mdash; <?php the_title(); ?></p>
 				<?php endwhile; endif; ?>
 			</div>
 		</div>
