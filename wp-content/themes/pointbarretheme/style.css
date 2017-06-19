@@ -156,8 +156,19 @@ div#quotecontainer
 	flex: 2;
 }
 
+div#quotewrapper
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 60%;
+	text-align: center;
+}
+
 div#prescontainer
 {
+	position: relative;
 	background-color: blue;
 	height: 600px;
 	flex: 1;
@@ -165,11 +176,22 @@ div#prescontainer
 
 p#quote
 {
-	position: absolute;
 	margin: 0;
 	font-size: 4em;
 	color: white;
-	width: 90%;
+	line-height: 100%;
+	margin-bottom: 20px;
+}
+
+p#author
+{
+	font-size: 2em;
+	color: white;
+}
+
+div#preswrapper
+{
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
@@ -191,3 +213,12 @@ div.projetsolo
 	background-color: lightblue;
 	height: 600px;
 	flex: 2;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+p#pres
+{
+	color: white;
+	font-size: 1.2em;
+	text-align: justify;
+}
