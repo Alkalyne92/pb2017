@@ -21,9 +21,14 @@
 
 <body>
 	<div id="header" class="blog-masthead">
+		<div id="animationzone">
+			<div id="animtest"></div>
+		</div>
 		<div class="container">
 			<nav class="blog-nav">
-				Salut
+				<a class="blog-nav-item active" href="#">Home</a>
+				<?php wp_list_pages( '&title_li=' ); ?>
+
 			</nav>
 		</div>
 	</div>
