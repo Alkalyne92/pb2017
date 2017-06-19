@@ -25,4 +25,17 @@ function mon_action()
 	die();
 }
 
+
+// ACTIVER LES IMAGES A LA UNE
+add_theme_support('post-thumbnails');
+function setup_types() {
+    register_post_type('projets', array(
+        'label' => __('Projets'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'setup_types');
+
+
 ?>
