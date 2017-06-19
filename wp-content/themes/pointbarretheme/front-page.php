@@ -44,22 +44,16 @@
 	</div>
 
 	<div id="projetscontainer">
-			<?php
-				$query = new WP_Query(array("post_type" => "Projets"));
-					while ($query->have_posts()) : $query->the_post();
-				echo get_the_post_thumbnail($id, 'thumbnail'); 
-			?>
+			<?php $projetsolo = new WP_Query(array("post_type" => "Projets"));
+					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post(); ?>
+						<div class="projetsolo">
 
-<div class="projetsolo">
-			<img src=" <?php echo get_the_post_thumbnail($id, 'thumbnail');  ?> ">
-			<h3>
-			<a class="openproject" data-permalink="<?php the_permalink(); ?> "href="#">
-				<?php the_title(); ?>
-			</a>
-		</h3>
-</div>
-					<?php endwhile; ?>
-		
+							<img class="thumbnail"><?php the_post_thumbnail(); ?></img>
+							<h3 id="title"><?php the_title(); ?></h3>
+							<p id="content"><?php the_content(); ?></p>
+
+						</div>
+			<?php endwhile; endif; ?>
 	</div>
 
 	<div class="fullscreenproject"> </div>

@@ -199,26 +199,39 @@ div#preswrapper
 }
 
 
-div#projetscontainer
-{
-	height: auto;
-	width: 100vw;
-	display: flex;
-	padding: 10vh;
-}
-
-div.projetsolo
-{
-	position: relative;
-	background-color: lightblue;
-	height: 600px;
-	flex: 2;
-	transform: translateY(-50%) translateX(-50%);
-}
-
 p#pres
 {
 	color: white;
 	font-size: 1.2em;
 	text-align: justify;
+}
+
+
+div#projetscontainer
+{
+	height: auto;
+	width: 100vw;
+	display: block;
+}
+
+div.projetsolo
+{
+	display: flex;
+	position: relative;
+	background-color: grey;
+	height: auto;
+	flex: 2;
+	padding:20vh;
+	margin-bottom: 10vh;
+}
+
+div.projetsolo .thumbnail
+{
+	display: flex;
+	position: relative;
+	background-color: grey;
+	height: auto;
+	flex: 2;
+	padding:20vh;
+	margin-bottom: 10vh;
 }
