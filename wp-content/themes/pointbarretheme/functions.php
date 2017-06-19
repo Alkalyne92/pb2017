@@ -38,4 +38,8 @@ function setup_types() {
 add_action('init', 'setup_types');
 
 
+// désactivation des <p> moches
+remove_filter('the_content', 'wpautop');
+
+
 ?>

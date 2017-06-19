@@ -31,24 +31,24 @@ $(document).ready(function()
 		return false;
 	});
 
-	$(window).on('scroll mousewheel DOMMouseScroll onmousewheel', function(e)
-	{
-		if (e.originalEvent.wheelDelta < 0 && !fired)
-		{
-			fired = true;
-			console.log("SCROLLING DOWN\n");
-			var permalink = "http://localhost:8888/pb2017/projets/projet-4";
-			$(".fullscreenproject").load(permalink);
-			$(".fullscreenproject").css('display', 'inline');
-			$(".fullscreenproject").animate(
-				{
-					'opacity' : '1'
-				}, 250);
-		}
-		else
-		{
-			// scrolling up
-			console.log("SCROLLING UP\n");
-		}
-	});
+	// $(window).on('scroll mousewheel DOMMouseScroll onmousewheel', function(e)
+	// {
+	// 	if (e.originalEvent.wheelDelta < 0 && !fired)
+	// 	{
+	// 		fired = true;
+	// 		console.log("SCROLLING DOWN\n");
+	// 		var permalink = "http://localhost:8888/pb2017/projets/projet-4";
+	// 		$(".fullscreenproject").load(permalink);
+	// 		$(".fullscreenproject").css('display', 'inline');
+	// 		$(".fullscreenproject").animate(
+	// 			{
+	// 				'opacity' : '1'
+	// 			}, 250);
+	// 	}
+	// 	else
+	// 	{
+	// 		// scrolling up
+	// 		console.log("SCROLLING UP\n");
+	// 	}
+	// });
 });
