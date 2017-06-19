@@ -49,8 +49,8 @@
 						<div class="projetsolo">
 
 							<img class="thumbnail"><?php the_post_thumbnail(); ?></img>
-							<h3 id="title"><?php the_title(); ?></h3>
-							<p id="content"><?php the_content(); ?></p>
+							<h3 class="title"><?php the_title(); ?></h3>
+							<p class="content"><?php the_content(); ?></p>
 
 						</div>
 			<?php endwhile; endif; ?>
