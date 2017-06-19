@@ -9,7 +9,7 @@ $(document).ready(function()
 		$(".fullscreenproject").css('display', 'inline');
 		$(".fullscreenproject").animate(
 			{
-				'opacity' : '1'
+				'opacity' : '0'
 			}, 250);
 		return false;
 	});
@@ -30,6 +30,7 @@ $(document).ready(function()
 			});
 		return false;
 	});
+
 
 	// $(window).on('scroll mousewheel DOMMouseScroll onmousewheel', function(e)
 	// {
