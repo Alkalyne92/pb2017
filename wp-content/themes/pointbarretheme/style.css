@@ -1,0 +1,141 @@
+/*
+Theme Name: Theme Point-Barre 2017
+Author: Point-Barre
+Description: Coucou c'est nous
+Version: 0.0.1
+Tags:
+*/
+
+@font-face
+{
+	font-family: Cocogoose;
+	src: url(./assets/cocogoose_light.ttf);
+}
+
+
+*, *::before, *::after {
+margin : 0px;
+padding : 0px;
+border : none;
+outline : none;
+text-decoration : none;
+list-style : none;
+font-weight : inherit;
+text-rendering : geometricPrecision;
+-webkit-box-sizing : border-box;
+-moz-box-sizing : border-box;
+box-sizing : border-box;
+-webkit-font-smoothing : antialiased;
+webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+}
+
+body{
+font-family: "minerva-modern",sans-serif;
+font-style: normal;
+font-weight: 400; 
+background-color: #000000 !important;
+color: red;
+ background: red;
+ -webkit-background-size: cover;
+ background-size: cover;
+ width: 100%;
+ height:100vh;
+ font-size: 1.5em;
+
+}
+
+#baseline {
+position            : absolute;
+left                : 50%;
+width               : 60%;
+max-width           : 250px;
+transform           : translateX(-50%);
+top                 : 30vh;
+/* 
+Pour logos svg
+fill	: #d34549;	*/
+color: #fff;
+text-align: center;
+}
+
+
+#nav-projets {
+color               : white;
+position            : absolute;
+right                : 0%;
+transform           : translateX(-50%);
+bottom              : 30vh;
+text-align          : right;
+line-height         : 1.6em;
+
+}
+
+#nav-projets a{
+color               : #ffffff;
+webkit-transition   : all 0.2s ease;
+   transition          : all 0.2s ease;
+   text-decoration     : none;
+  border-bottom       : 1px solid rgba(255,255,255,0.2);
+  padding-bottom      : 5px;
+}
+
+#nav-projets a:hover{
+border-bottom: 1px solid rgba(255,255,255,1);
+}
+
+#infos {
+color	: #ffffff;
+position            : absolute;
+left                : 50%;
+transform           : translateX(-50%);
+top                 : 90vh;
+text-align          : center;
+line-height         : 1.9em;
+font-size: 0.7em;
+}
+
+#infos a {
+color	: #ffffff;
+webkit-transition   : all 0.2s ease;
+   transition          : all 0.2s ease;
+   text-decoration     : none;
+
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#header
+{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+}
+
+.fullscreenproject
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+	top: 0;
+	z-index: 10;
+	display: none;
+	opacity: 0;
+}
+
+article.projet
+{
+	width: 500px;
+	height: auto;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
