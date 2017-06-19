@@ -33,7 +33,7 @@ body{
 font-family: "minerva-modern",sans-serif;
 font-style: normal;
 font-weight: 400; 
-background-color: #000000 !important;
+background-color: #ffffff !important;
 color: red;
  background: red;
  -webkit-background-size: cover;
@@ -46,16 +46,17 @@ color: red;
 
 #baseline {
 position            : absolute;
-left                : 50%;
+right               : 10%;
 width               : 60%;
 max-width           : 250px;
 transform           : translateX(-50%);
-top                 : 30vh;
+top                 : 10vh;
+text-align: left !important;
 /* 
 Pour logos svg
 fill	: #d34549;	*/
-color: #fff;
-text-align: center;
+color: #000;
+
 }
 
 
@@ -136,6 +137,41 @@ article.projet
 	position: relative;
 	left: 50%;
 	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+div#homecontainer
+{
+	height: auto;
+	width: 100vw;
+	display: flex;
+}
+
+div#quotecontainer
+{
+	position: relative;
+	background-color: lightblue;
+	height: 600px;
+	flex: 2;
+}
+
+div#prescontainer
+{
+	background-color: blue;
+	height: 600px;
+	flex: 1;
+}
+
+p#quote
+{
+	position: absolute;
+	margin: 0;
+	font-size: 4em;
+	color: white;
+	width: 90%;
+	top: 50%;
+	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	text-align: center;
 }

@@ -17,7 +17,12 @@
 		<?php endwhile; ?>
 	</div>
 
-	
+	<div id="homecontainer">
+		<div id="quotecontainer">
+			<p id="quote">Ici va apparaître la quote aléatoire parmi une liste gérée dans le back.</p>
+		</div>
+		<div id="prescontainer"></div>
+	</div>
 
 	<div class="fullscreenproject"> </div>
 	<?php get_footer(); ?>
