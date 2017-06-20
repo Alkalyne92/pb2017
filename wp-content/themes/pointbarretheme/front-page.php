@@ -47,19 +47,14 @@
 			<?php $projetsolo = new WP_Query(array("post_type" => "Projets"));
 					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post();
 					?>
-						
-<div><?php
+									
+			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('thumbnail'); ?>)">
 
-    if ( $thumbnail_id = get_post_thumbnail_id() ) {
-        if ( $image_src = wp_get_attachment_image_src( $thumbnail_id, 'normal-bg' ) )
-            printf( ' style="background-image: url(%s);"', $image_src[0] );     
-    }
+			</div> <!-- projet solo fin-->
 
-?>
-</div>
-
+			
 			<?php endwhile; endif; ?>
-	</div>
+				</div> <!-- projet container fin-->
 
 	<div class="fullscreenproject"> </div>
 	<?php get_footer(); ?>
