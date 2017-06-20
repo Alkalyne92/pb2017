@@ -171,6 +171,7 @@ div#homecontainer
 	height: auto;
 	width: 100vw;
 	display: flex;
+	margin-bottom: 100px;
 }
 
 div#quotecontainer
@@ -237,32 +238,31 @@ p#pres
 /* ---------- CONTAINER ----*/
 div#projetscontainer
 {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 80vw;
 	height: auto;
-	width: 100vw;
-	display: block;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 /* ---------- PROJET SOLO ----*/
 div.projetsolo
 {
-
-	display: flex;
 	position: relative;
-	height: auto;
-	flex: 2;
-	padding:20vh;
-	margin: 10vh;
+	height: 60vh;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+border: 1px solid purple;
+	margin-bottom: 100px;
 }
 
 div.projetsolo img
 {
 	position: relative;
-	background-color: green;
 	height: auto;
-	max-width: 50vw;
 
 }
 
@@ -271,12 +271,14 @@ div.projetsolo img.thumbnail
 	display: none;
 }
 
-div.projetsolo h3.title
-{
-	
-}
-
-div.projetsolo p.content
-{
-	
+div.projetsolo .encart {
+	background-color: black;
+	height: auto;
+	widows: auto;
+	padding: 15px;
+	position: absolute;
+	top:50%;
+	left: 75%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 300px;
 }

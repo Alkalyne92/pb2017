@@ -49,7 +49,10 @@
 					?>
 									
 			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('thumbnail'); ?>)">
-
+					<div class="encart">
+							<h2><?php the_title(); ?></h2>
+							<p><?php the_content(); ?></p>
+					</div>
 			</div> <!-- projet solo fin-->
 
 			
