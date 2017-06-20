@@ -7,13 +7,7 @@ Tags:
 */
 
 @import url("animations.css");
-
-@font-face
-{
-	font-family: Cocogoose;
-	src: url(./assets/cocogoose_light.ttf);
-}
-
+@import url("fonts.css");
 
 *, *::before, *::after {
 margin : 0px;
@@ -32,7 +26,6 @@ webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
 }
 
 body{
-font-family: "minerva-modern",sans-serif;
 font-style: normal;
 font-weight: 400; 
 background-color: #ffffff !important;
@@ -206,6 +199,7 @@ p#quote
 	color: white;
 	line-height: 100%;
 	margin-bottom: 20px;
+	font-family: Grifo !important;
 }
 
 p#author

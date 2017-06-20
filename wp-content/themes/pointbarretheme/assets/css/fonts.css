@@ -1,0 +1,7 @@
+@font-face {
+	font-family : 'Grifo';
+	src : url('../../../../uploads/fonts/25/Grifo-S-Light.eot') format('embeddedentype'),
+	      url('../../../../uploads/fonts/25/Grifo-S-Light.woff') format('woff');
+	font-weight      : 300;
+	font-style       : light;
+}
