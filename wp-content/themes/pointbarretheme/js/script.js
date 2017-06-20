@@ -1,5 +1,11 @@
 $(document).ready(function()
 {
+	// FIT TEXT
+	$("p#quote").fitText(1, { minFontSize: '45px'});
+
+
+
+
 	var fired = false;
 
 	$('.openproject').click(function()
@@ -57,27 +63,31 @@ $(document).ready(function()
 	// LE PARALLAX DE QUALITEY
 	// ***********************
 
+	var last = 0;
 	var delta = -50;
-	$(window).on('scroll mousewheel DOMMouseScroll onmousewheel', function(e)
+	$(window).on('scroll', function(e)
 	{
-		var scrolled = $(window).scrollTop();
+		var scrolled = $(this).scrollTop();
 		$('.projetsolo').each(function(i)
 		{
 			var target = $(this);
 			if (scrolled > target.offset().top - $(window).height() && scrolled < target.offset().top + target.height())
 			{
-				if (e.originalEvent.wheelDelta < 0)
+				if (scrolled > last)
 				{
 					delta -= 1;
 					$(this).children().css('transform', 'translateY(' + delta + '%) translateX(-50%)');
+					console.log("scrolling DOWN");
 				}
-				else if (e.originalEvent.wheelDelta > 0)
+				else
 				{
 					delta += 1;
 					$(this).children().css('transform', 'translateY(' + delta + '%) translateX(-50%)');
+					console.log("scrolling UP");
 				}
 			}
 		})
+		last = scrolled;
 		// css('top', 'calc(50% + ' + (0-(scrolled*0.3)) + 'px');
 	})
 });
