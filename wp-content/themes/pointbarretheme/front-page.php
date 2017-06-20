@@ -45,14 +45,19 @@
 
 	<div id="projetscontainer">
 			<?php $projetsolo = new WP_Query(array("post_type" => "Projets"));
-					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post(); ?>
-						<div class="projetsolo">
+					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post();
+					?>
+						
+<div><?php
 
-							<img class="thumbnail"><?php the_post_thumbnail(); ?></img>
-							<h3 class="title"><?php the_title(); ?></h3>
-							<p class="content"><?php the_content(); ?></p>
+    if ( $thumbnail_id = get_post_thumbnail_id() ) {
+        if ( $image_src = wp_get_attachment_image_src( $thumbnail_id, 'normal-bg' ) )
+            printf( ' style="background-image: url(%s);"', $image_src[0] );     
+    }
 
-						</div>
+?>
+</div>
+
 			<?php endwhile; endif; ?>
 	</div>
 
