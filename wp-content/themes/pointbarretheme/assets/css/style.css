@@ -236,9 +236,8 @@ div#quotewrapper
 {
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	width: 60%;
+	transform: translateY(-50%);
+	width: 90%;
 	text-align: center;
 }
 
@@ -258,6 +257,7 @@ p#quote
 	margin-bottom: 20px;
 	font-family: Grifo;
 	font-weight: 400;
+	text-align: left;
 }
 
 p#author
@@ -266,15 +266,14 @@ p#author
 	color: #575a5c;
 	font-family: Grifo;
 	font-weight: 400;
+	text-align: left;
 }
 
 div#preswrapper
 {
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	text-align: center;
+	transform: translateY(-50%);
 }
 
 
