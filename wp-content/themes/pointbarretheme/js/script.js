@@ -52,4 +52,32 @@ $(document).ready(function()
 	// 		console.log("SCROLLING UP\n");
 	// 	}
 	// });
+
+	// ***********************
+	// LE PARALLAX DE QUALITEY
+	// ***********************
+
+	var delta = -50;
+	$(window).on('scroll mousewheel DOMMouseScroll onmousewheel', function(e)
+	{
+		var scrolled = $(window).scrollTop();
+		$('.projetsolo').each(function(i)
+		{
+			var target = $(this);
+			if (scrolled > target.offset().top - $(window).height() && scrolled < target.offset().top + target.height())
+			{
+				if (e.originalEvent.wheelDelta < 0)
+				{
+					delta -= 1;
+					$(this).children().css('transform', 'translateY(' + delta + '%) translateX(-50%)');
+				}
+				else if (e.originalEvent.wheelDelta > 0)
+				{
+					delta += 1;
+					$(this).children().css('transform', 'translateY(' + delta + '%) translateX(-50%)');
+				}
+			}
+		})
+		// css('top', 'calc(50% + ' + (0-(scrolled*0.3)) + 'px');
+	})
 });
