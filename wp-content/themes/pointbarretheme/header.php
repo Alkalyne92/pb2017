@@ -25,7 +25,7 @@
 		<div id="animationzone">
 			<div id="animtest"></div>
 		</div>
-		<div class="container">
+		<div class="container clearfix">
 			<ul class="nav nav-primary">
 			    <li class="active"><a href="#">Home</a></li>
 			    <?php wp_list_pages( '&title_li=' ); ?>

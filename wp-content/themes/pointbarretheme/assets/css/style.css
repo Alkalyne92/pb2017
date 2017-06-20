@@ -32,6 +32,19 @@ box-sizing         : border-box;
 webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLEARFIX */
+.clearfix:before, .clearfix:after {
+content : '';
+display : table;
+}
+.clearfix:after {
+clear : both;
+}
+.clearfix {
+zoom : 1;
+}
+
+
 body{
 font-family: "minerva-modern",sans-serif;
 font-style: normal;
@@ -112,6 +125,7 @@ webkit-transition   : all 0.2s ease;
 }
 
 #header .rotulus {
+	position: relative;
 
 }
 
@@ -181,6 +195,9 @@ div#bouchon
 
 div#animationzone
 {	
+	position: absolute;
+	top: 50%;
+	transform: translate(50%, -50%);
 	width: auto;
 	height: 100%;
 	/*background-color: orange;*/
@@ -192,9 +209,6 @@ div#animtest
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%);
 	animation: anim1 1s infinite;
 }
 
