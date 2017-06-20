@@ -52,4 +52,22 @@ $(document).ready(function()
 	// 		console.log("SCROLLING UP\n");
 	// 	}
 	// });
+
+	// ***********************
+	// LE PARALLAX DE QUALITEY
+	// ***********************
+
+	$(window).scroll(function(e)
+	{
+		var scrolled = $(window).scrollTop();
+		$('.projetsolo').each(function(i)
+		{
+			var target = $(this);
+			if (scrolled > target.offset().top - $(window).height() && scrolled < target.offset().top + target.height())
+			{
+				console.log("PROJECT " + (i + 1) + " IS IN SCOPE");
+			}
+		})
+		// css('top', 'calc(50% + ' + (0-(scrolled*0.3)) + 'px');
+	})
 });
