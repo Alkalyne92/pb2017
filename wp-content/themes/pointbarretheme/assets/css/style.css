@@ -282,3 +282,8 @@ div.projetsolo .encart {
 	transform: translateX(-50%) translateY(-50%);
 	width: 300px;
 }
+
+div.projetsolo:nth-child(even) .encart
+{
+	left: 25%;
+}
