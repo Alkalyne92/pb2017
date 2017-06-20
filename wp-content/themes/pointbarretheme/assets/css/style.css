@@ -245,13 +245,13 @@ div#projetscontainer
 /* ---------- PROJET SOLO ----*/
 div.projetsolo
 {
+
 	display: flex;
 	position: relative;
-	background-color: grey;
 	height: auto;
 	flex: 2;
 	padding:20vh;
-	margin-bottom: 10vh;
+	margin: 10vh;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
