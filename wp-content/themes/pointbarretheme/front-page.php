@@ -22,6 +22,7 @@
 		<?php endwhile; ?>
 	</div> -->
 
+	<div id="bouchon"></div>
 	<div id="homecontainer">
 		<div id="quotecontainer">
 			<div id="quotewrapper">

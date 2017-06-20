@@ -7,6 +7,7 @@ Tags:
 */
 
 @import url("animations.css");
+@import url("fonts.css");
 
 @font-face
 {
@@ -123,6 +124,12 @@ webkit-transition   : all 0.2s ease;
 	display: flex;
 }
 
+div#bouchon
+{
+	width: 100vw;
+	height: 80px;
+}
+
 div#animationzone
 {
 	width: 200px;
@@ -177,7 +184,6 @@ div#homecontainer
 div#quotecontainer
 {
 	position: relative;
-	background-color: lightblue;
 	height: 600px;
 	flex: 2;
 }
@@ -195,7 +201,6 @@ div#quotewrapper
 div#prescontainer
 {
 	position: relative;
-	background-color: blue;
 	height: 600px;
 	flex: 1;
 }
@@ -203,16 +208,20 @@ div#prescontainer
 p#quote
 {
 	margin: 0;
-	font-size: 4em;
-	color: white;
+	font-size: 3em;
+	color: rgb(81, 0, 255);
 	line-height: 100%;
 	margin-bottom: 20px;
+	font-family: Grifo;
+	font-weight: 400;
 }
 
 p#author
 {
-	font-size: 2em;
-	color: white;
+	font-size: 1em;
+	color: #575a5c;
+	font-family: Grifo;
+	font-weight: 400;
 }
 
 div#preswrapper
@@ -227,9 +236,11 @@ div#preswrapper
 
 p#pres
 {
-	color: white;
-	font-size: 1.2em;
+	color: rgb(81, 0, 255);
+	font-size: .8em;
 	text-align: justify;
+	font-family: Grifo;
+	font-weight: 400;
 }
 
 
@@ -272,7 +283,8 @@ div.projetsolo img.thumbnail
 }
 
 div.projetsolo .encart {
-	background-color: black;
+	background-color: rgba(81, 0, 255, .85);
+	box-shadow: 5px 5px 20px black;
 	height: auto;
 	widows: auto;
 	padding: 15px;
@@ -281,6 +293,9 @@ div.projetsolo .encart {
 	left: 75%;
 	transform: translateX(-50%) translateY(-50%);
 	width: 300px;
+	color: white;
+	font-family: Grifo;
+	font-weight: 800;
 }
 
 div.projetsolo:nth-child(even) .encart
