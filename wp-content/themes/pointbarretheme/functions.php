@@ -41,5 +41,6 @@ add_action('init', 'setup_types');
 // désactivation des <p> moches
 remove_filter('the_content', 'wpautop');
 
+register_nav_menus(array('Menu principal' => __('Navigation principale', 'pointbarretheme')));
 
 ?>
