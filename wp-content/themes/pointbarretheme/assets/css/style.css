@@ -100,6 +100,7 @@ webkit-transition   : all 0.2s ease;
 	z-index 		: 10;
 	background-color: inherit;
 	display 		: flex;
+	border-bottom: 2px solid rgb(81, 0, 255);
 }
 
 
@@ -327,7 +328,7 @@ div.projetsolo .encart {
 	widows: auto;
 	padding: 15px;
 	position: absolute;
-	top:50%;
+	top: 80%;
 	left: 75%;
 	transform: translateX(-50%) translateY(-50%);
 	width: 300px;
