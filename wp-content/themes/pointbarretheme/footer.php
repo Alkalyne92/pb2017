@@ -1,4 +1,7 @@
+</div> <!-- /.rotulus -->
+
 </div> <!-- /.container -->
+
 
     <div id="infos">
 	<p>

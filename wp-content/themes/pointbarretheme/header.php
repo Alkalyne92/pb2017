@@ -19,7 +19,9 @@
 </head>
 
 <body>
+
 	<div id="header" class="blog-masthead">
+	<div class="rotulus">
 		<div id="animationzone">
 			<div id="animtest"></div>
 		</div>
@@ -30,4 +32,6 @@
 			</ul>
 		</div>
 	</div>
+	</div> 
 	<div class="container">
+			<div class="rotulus">
