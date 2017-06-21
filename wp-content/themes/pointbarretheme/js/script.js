@@ -1,9 +1,21 @@
 $(document).ready(function()
 {
-	$('*').click(function(){
-		$('.nav-wrap').animate({
-			'transform':'translateX(0%)'
-		}, 500);
+	var open = 0;
+	$('.animtest').click(function()
+	{
+		if (open % 2 == 0)
+		{
+			$('.nav-wrap').animate({
+			'right':'0'
+			}, 500);
+		}
+		else
+		{
+			$('.nav-wrap').animate({
+			'right':'-800px'
+			}, 500);	
+		}
+		open++;
 	});
 
 

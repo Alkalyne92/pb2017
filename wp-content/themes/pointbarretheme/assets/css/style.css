@@ -131,7 +131,11 @@ color 				: #000;
 
 }
 
-
+.nav-wrap
+{
+	position: absolute;
+	right: -800px;
+}
 .nav {
 	list-style 		: none;
 	float 			: right;
@@ -156,7 +160,6 @@ color 				: #000;
 	text-align 		: right; 
 	background-color: white;
 	padding 		: 60px 100px 0px 0px; 
-	transform : translateX(100%);
 }
 
 
