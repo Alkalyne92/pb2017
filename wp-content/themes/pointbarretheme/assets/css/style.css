@@ -139,7 +139,7 @@ webkit-transition   : all 0.2s ease;
 
 .nav li a {
 	display 		: inline-block;
-	margin-left 	: 30px;
+	margin-left : 30px;
 }
 
 .nav-primary {
@@ -271,7 +271,7 @@ p#quote
 {
 	margin: 0;
 	color: rgb(81, 0, 255);
-	line-height: 1.5em;
+	line-height: 1em;
 	margin-bottom: 20px;
 	font-family: Grifo;
 	font-weight: 400;
@@ -350,7 +350,7 @@ div.projetsolo .encart {
 	box-shadow: 5px 5px 20px black;
 	height: auto;
 	widows: auto;
-	padding: 15px;
+	padding: 80px;
 	position: absolute;
 	top: 80%;
 	left: 75%;
