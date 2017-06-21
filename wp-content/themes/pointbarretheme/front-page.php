@@ -50,9 +50,10 @@
 					?>
 									
 			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('thumbnail'); ?>)">
-					<div class="encart">
+					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">
 							<h2><?php the_title(); ?></h2>
 							<p><?php the_content(); ?></p>
+							<h4></h4>
 					</div>
 			</div> <!-- projet solo fin-->
 
