@@ -43,29 +43,29 @@ display : table;
 clear : both;
 }
 .clearfix {
-zoom : 1;
+zoom  : 1;
 }
 
 
 body{
-font-family: "minerva-modern",sans-serif;
-font-style: normal;
-font-weight: 400; 
-background-color: #ffffff !important;
-color: red;
- background: red;
+font-family 		: "minerva-modern",sans-serif;
+font-style 			: normal;
+font-weight 		: 400; 
+background-color 	: #ffffff !important;
+color 				: red;
+ background 		: red;
  -webkit-background-size: cover;
- background-size: cover;
- width: 100%;
- height:100vh;
- font-size: 1.5em;
+ background-size 	: cover;
+ width 				: 100%;
+ height 			:100vh;
+ font-size 			: 1.5em;
  }
 
 .rotulus {
-	max-width: 1600px;
-	margin: auto;
-	padding: 0px 100px 0px 100px;
-	width: 100%;
+	max-width 		: 1600px;
+	margin 			: auto;
+	padding 		: 0px 100px 0px 100px;
+	width 			: 100%;
 }
 
 #baseline {
@@ -75,11 +75,11 @@ width               : 60%;
 max-width           : 250px;
 transform           : translateX(-50%);
 top                 : 10vh;
-text-align: left !important;
+text-align 			: left !important;
 /* 
 Pour logos svg
 fill	: #d34549;	*/
-color: #000;
+color 				: #000;
 
 }
 
@@ -87,43 +87,48 @@ color: #000;
 
 
 #infos {
-color	: #ffffff;
-position            : absolute;
-left                : 50%;
-transform           : translateX(-50%);
-top                 : 90vh;
-text-align          : center;
-line-height         : 1.9em;
-font-size: 0.7em;
+	color	 		: #ffffff;
+	position        : absolute;
+	left            : 50%;
+	transform       : translateX(-50%);
+	top             : 90vh;
+	text-align      : center;
+	line-height     : 1.9em;
+	font-size 		: 0.7em;
 }
 
 #infos a {
-color	: #ffffff;
-webkit-transition   : all 0.2s ease;
-   transition          : all 0.2s ease;
-   text-decoration     : none;
+	color	 		: #ffffff;
+	webkit-transition: all 0.2s ease;
+   transition       : all 0.2s ease;
+   text-decoration  : none;
 
 }
 
 .container
 {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+	width 			: 100%;
+	height 			: 100%;
+	margin 			: 0;
+	padding 		: 0;
 }
 
 #header
 {
-	position: fixed;
-	top: 0;
-	left: 0;
+	position 		: fixed;
+	top 			: 0;
+	left 			: 0;
 	width 			: 100%;
 	height 			: 140px;
 	z-index 		: 10;
 	background-color: white;
+<<<<<<< HEAD
 	display 		: none;
 	transform: translateY(0px);
+=======
+	display 		: flex;
+	transform 		: translateY(0px);
+>>>>>>> 0c3bcd0ed381b9c0322b8e08efad0177258652b5
 }
 
 #header .rotulus {
@@ -141,7 +146,7 @@ webkit-transition   : all 0.2s ease;
 
 .nav li a {
 	display 		: inline-block;
-	margin-left : 30px;
+	margin-left 	: 30px;
 }
 
 .nav-primary {
@@ -158,7 +163,7 @@ webkit-transition   : all 0.2s ease;
 
 
 .nav-primary .active {
-	color: black;
+	color 			: black;
 }
 
 
@@ -176,12 +181,12 @@ line-height         : 1.6em;
 }
 
 #nav-projets a{
-color               : #ffffff;
-webkit-transition   : all 0.2s ease;
-   transition          : all 0.2s ease;
-   text-decoration     : none;
-  border-bottom       : 1px solid rgba(255,255,255,0.2);
-  padding-bottom      : 5px;
+color                : #ffffff;
+webkit-transition    : all 0.2s ease;
+   transition        : all 0.2s ease;
+   text-decoration   : none;
+  border-bottom      : 1px solid rgba(255,255,255,0.2);
+  padding-bottom     : 5px;
 }
 
 #nav-projets a:hover{
@@ -192,15 +197,15 @@ webkit-transition   : all 0.2s ease;
 
 div#bouchon
 {
-	width: 100%;
-	height: 140px;
+	width 			: 100%;
+	height 			: 140px;
 }
 
 div#animationzone
 {	
-	position: absolute;
-	width: auto;
-	height: 100%;
+	position 		: absolute;
+	width 			: auto;
+	height 			: 100%;
 	/*background-color: orange;*/
 }
 
@@ -208,34 +213,42 @@ div.animtest
 {
 	position: absolute;
 	background-color: rgb(81, 0, 255);
+<<<<<<< HEAD
 	width: 20px;
 	height: 20px;
 	top: 60px;
 	left: 100px;
 	animation: logoanim 6s ease infinite;
+=======
+	width 			: 20px;
+	height 			: 20px;
+	position 		: relative;
+	top 			: 50%;
+	animation 		: logoanim 6s ease infinite;
+>>>>>>> 0c3bcd0ed381b9c0322b8e08efad0177258652b5
 }
 
 .fullscreenproject
 {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	position 		: absolute;
+	width 			: 100%;
+	height 			: 100%;
 	background-color: orange;
-	top: 0;
-	z-index: 10;
-	display: none;
-	opacity: 0;
+	top 			: 0;
+	z-index 		: 10;
+	display 		: none;
+	opacity 		: 0;
 }
 
 article.projet
 {
-	width: 500px;
-	height: auto;
-	position: relative;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	text-align: center;
+	width 			: 500px;
+	height 			: auto;
+	position 		: relative;
+	left 			: 50%;
+	top 	 	 	: 50%;
+	transform 	 	: translateX(-50%) translateY(-50%);
+	text-align 	 	: center;
 }
 
 div#homecontainer
@@ -255,21 +268,22 @@ div#quotecontainer
 
 div#quotewrapper
 {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-	text-align: center;
-	line-height: 1.4em;
+	position 	 	: absolute;
+	top 	 	 	: 50%;
+	transform 	 	: translateY(-50%);
+	width 	 	 	: 100%;
+	text-align 	 	: center;
+	line-height 	: 1.4em;
 }
 
 div#prescontainer
 {
-	position: relative;
-	height: 600px;
-	flex: 1;
+	position 		: relative;
+	height 	 		: 600px;
+	flex 			: 1;
 }
 
+/* ---------- CITATION ----*/
 p#quote
 {
 	margin: 0;
@@ -280,19 +294,28 @@ p#quote
 	line-height: .9em;
 }
 
+p#author
+{
+	font-size 	 	: 1em;
+	color 	 	 	: #575a5c;
+	font-family 	: Grifo;
+	font-weight 	: 400;
+	text-align 	 	: center;
+}
+
 .grow div
 {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	height: auto;
+	position 	 	: relative;
+	display 	 	: inline-block;
+	overflow 	 	: hidden;
+	height 	 		: auto;
 	/*background: rgba(0, 0, 0, 0.1);*/
 }
 .grow div span
 {
-	display: block;
-	height: auto;
-	opacity: 0;
+	display 	: block;
+	height 	 	: auto;
+	opacity 	: 0;
 	/*transform: translate3d(0px, 100%, 0px);*/
 	/*-webkit-transition: all 0.8s cubic-bezier(.86, 0, .07, 1);
 	transition : all 0.8s cubic-bezier(.86, 0, .07, 1);*/
@@ -304,31 +327,22 @@ p#quote
 }
 */
 
-p#author
-{
-	font-size: 1em;
-	color: #575a5c;
-	font-family: Grifo;
-	font-weight: 400;
-	text-align: center;
-}
-
 div#preswrapper
 {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	position 	 	: absolute;
+	top 	 	 	: 50%;
+	transform 	 	: translateY(-50%);
 }
 
 
 p#pres
 {
-	color: rgb(81, 0, 255);
-	font-size: .8em;
-	font-family: Sul Sans;
-	font-weight: 400;
-	text-align: left;
-	line-height: 1.5em;
+	color 			: rgb(81, 0, 255);
+	font-size 		: .8em;
+	font-family 	: Sul Sans;
+	font-weight 	: 400;
+	text-align 		: left;
+	line-height 	: 1.5em;
 }
 
 
@@ -338,70 +352,87 @@ p#pres
 /* ---------- CONTAINER ----*/
 div#projetscontainer
 {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	width: 100%;
-	height: auto;
-	left: 50%;
-	transform: translateX(-50%);
+	display 		: flex;
+	flex-direction 	: column;
+	position 		: relative;
+	width 			: 100%;
+	height 			: auto;
+	left 			: 50%;
+	transform 		: translateX(-50%);
 }
 
 /* ---------- PROJET SOLO ----*/
 div.projetsolo
 {
-	position: relative;
-	height: calc(100vh - 140px);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100% auto;
-border: 1px solid purple;
-	margin-bottom: 100px;
+	position 			: relative;
+	height 				: calc(100vh - 140px);
+	background-repeat 	: no-repeat;
+	background-position : center center;
+	background-size 	: 100% auto;
+	border 				: 1px solid purple;
+	margin-bottom 		: 100px;
 }
 
+/* ---------- PROJET SOLO : IMAGES ; ----*/
 div.projetsolo figure
 {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: yellow;
+	position 		: absolute;
+	width 			: 100%;
+	height 			: 100%;
+	top 			: 0;
+	left 			: 0;
+	/*background-color: yellow;*/
 }
 
 div.projetsolo figure img
 {
-	position: relative;
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position 		: relative;
+	width 			: auto;
+	height 			: auto;
+	max-width 		: 100%;
+	max-height 		: 100%;
+	top 			: 50%;
+	left 			: 50%;
+	transform 		: translate(-50%, -50%);
 }
 
 div.projetsolo img.thumbnail
 {
-	display: none;
+	display 		: none;
 }
 
+/* ---------- PROJET SOLO : ENCART ; ----*/
 div.projetsolo .encart {
 	background-color: black;
-	height: auto;
-	widows: auto;
-	padding: 80px;
-	position: absolute;
-	top: 80%;
-	left: 75%;
-	transform: translateX(-50%) translateY(-50%);
-	width: 300px;
-	color: white;
-	font-family: Grifo;
-	font-weight: 800;
+	height 			: auto;
+	widows 			: auto;
+	padding 		: 80px;
+	position 		: absolute;
+	top 			: 80%;
+	left 			: 75%;
+	transform 		: translateX(-50%) translateY(-50%);
+	width 			: 40%;
+	color 			: white;
+	font-family 	: Grifo;
+	font-weight 	: 800;
 }
 
 div.projetsolo:nth-child(even) .encart
 {
-	left: 25%;
+	left 			: 25%;
+}
+
+/* ---------- PROJET SOLO : ENCART CONTENU ; ----*/
+div.projetsolo .encart h2 {
+	font-size 		: 1.2em;
+	font-family 	: Grifo;
+	font-weight 	: 600;
+	margin-bottom 	: 20px;
+}
+
+div.projetsolo .encart p {
+	font-size 		: 0.7em;
+	line-height 	: 1.5em;
+	font-family 	: Sul Sans;
+	font-weight 	: 300;
 }
