@@ -3,3 +3,9 @@
 	src : url('../../../../uploads/fonts/25/Grifo-S-Light.eot') format('embeddedentype'),
 	      url('../../../../uploads/fonts/25/Grifo-S-Light.woff') format('woff');
 }
+
+@font-face {
+	font-family : 'Sul Sans';
+	src : url('../../../../uploads/fonts/58/Sul-Sans-Light.eot') format('embeddedentype'),
+	      url('../../../../uploads/fonts/58/Sul-Sans-Light.woff') format('woff');
+}
