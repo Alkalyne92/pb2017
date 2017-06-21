@@ -22,13 +22,12 @@
 	
 	<div id="header" class="blog-masthead">
 
-			<div class="container clearfix">
+			<div class="container clearfix nav-wrap">
 				<ul class="nav nav-primary">
-				    <li class="active"><a href="#">Home</a></li>
 				    <?php wp_list_pages( '&title_li=' ); ?>
 				</ul>
 			</div>
-			
+
 		<div class="animtest"></div>
 	</div> 
 	<div class="container">

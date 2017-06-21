@@ -1,5 +1,12 @@
 $(document).ready(function()
 {
+	$('*').click(function(){
+		$('.nav-wrap').animate({
+			'transform':'translateX(0%)'
+		}, 500);
+	});
+
+
 	// FIT TEXT
 	$("p#quote").fitText(1, { minFontSize: '45px'});
 
