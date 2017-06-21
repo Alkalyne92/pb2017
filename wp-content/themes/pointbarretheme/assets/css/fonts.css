@@ -1,7 +1,17 @@
 @font-face {
 	font-family : 'Grifo';
+	src : url('../../../../uploads/fonts/25/Grifo-S-Regular.eot') format('embeddedentype'),
+	      url('../../../../uploads/fonts/25/Grifo-S-Regular.woff') format('woff');
+}
+@font-face {
+	font-family : 'Grifo-S-Medium';
 	src : url('../../../../uploads/fonts/25/Grifo-S-Medium.eot') format('embeddedentype'),
 	      url('../../../../uploads/fonts/25/Grifo-S-Medium.woff') format('woff');
+}
+@font-face {
+	font-family : 'Grifo-S-Bold';
+	src : url('../../../../uploads/fonts/25/Grifo-S-Bold.eot') format('embeddedentype'),
+	      url('../../../../uploads/fonts/25/Grifo-S-Bold.woff') format('woff');
 }
 
 @font-face {
