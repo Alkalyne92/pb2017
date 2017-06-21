@@ -47,6 +47,7 @@
 					<div class="encart">
 							<h2><?php the_title(); ?></h2>
 							<p><?php the_content(); ?></p>
+							<h4></h4>
 					</div>
 
 			</div> <!-- projet solo fin-->

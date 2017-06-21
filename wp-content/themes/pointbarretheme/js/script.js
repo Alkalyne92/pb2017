@@ -59,36 +59,6 @@ $(document).ready(function()
 	// 	}
 	// });
 
-	// PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX PARALLAX 
-
-	var last = 0;
-	var delta = -50;
-	$(window).on('scroll', function(e)
-	{
-		var scrolled = $(this).scrollTop();
-		$('.projetsolo').each(function(i)
-		{
-			var target = $(this);
-			if (scrolled > target.offset().top - $(window).height() && scrolled < target.offset().top + target.height())
-			{
-				if (scrolled > last)
-				{
-					delta -= 1;
-					$(this).find('.encart').css('transform', 'translateY(' + delta + '%) translateX(-50%)');
-					console.log("scrolling DOWN");
-				}
-				else
-				{
-					delta += 1;
-					$(this).find('.encart').css('transform', 'translateY(' + delta + '%) translateX(-50%)');
-					console.log("scrolling UP");
-				}
-			}
-		})
-		last = scrolled;
-		// css('top', 'calc(50% + ' + (0-(scrolled*0.3)) + 'px');
-	})
-
 	// ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO AN
 
 	// var triangle = [[1, 1], [2, 1], [1.5, 2]],

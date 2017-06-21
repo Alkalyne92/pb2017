@@ -23,7 +23,7 @@
 	<div id="header" class="blog-masthead">
 	<div class="rotulus">
 		<div id="animationzone">
-			<div id="animtest"></div>
+			<div class="animtest"></div>
 		</div>
 		<div class="container clearfix">
 			<ul class="nav nav-primary">

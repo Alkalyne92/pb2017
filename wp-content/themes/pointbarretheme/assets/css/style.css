@@ -9,6 +9,15 @@ Tags:
 @import url("animations.css");
 @import url("fonts.css");
 
+@keyframes logoanim
+{
+	0% {border-radius: 50%; transform: translateY(-50%);}
+	30% {border-radius: 50%; transform: translateY(-50%);}
+	50% {border-radius: 0%; transform: translateY(-50%) rotate(90deg);}
+	80% {border-radius: 0%; transform: translateY(-50%) rotate(90deg);}
+	100% {border-radius: 50%; transform: translateY(-50%) rotate(180deg);}
+}
+
 *, *::before, *::after {
 margin           : 0px;
 padding          : 0px;
@@ -106,14 +115,15 @@ webkit-transition   : all 0.2s ease;
 
 #header
 {
-	position 		: fixed;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width 			: 100%;
 	height 			: 140px;
 	z-index 		: 10;
 	background-color: white;
 	display 		: flex;
-
-	/*border-bottom: 2px solid rgb(81, 0, 255);*/
+	transform: translateY(0px);
 }
 
 #header .rotulus {
@@ -131,7 +141,7 @@ webkit-transition   : all 0.2s ease;
 
 .nav li a {
 	display 		: inline-block;
-	margin-left 	: 30px;
+	margin-left : 30px;
 }
 
 .nav-primary {
@@ -142,8 +152,8 @@ webkit-transition   : all 0.2s ease;
 .nav-primary li {
 	display 		: inline; color: grey;
 	font-size 		: 0.8em;
-	font-family 	: Grifo;
-	font-weight 	: 400
+	font-family 	: Sul Sans;
+	font-weight 	: 300;
 	}
 
 
@@ -189,19 +199,19 @@ div#bouchon
 div#animationzone
 {	
 	position: absolute;
-	top: 50%;
-	transform: translate(50%, -50%);
 	width: auto;
 	height: 100%;
 	/*background-color: orange;*/
 }
 
-div#animtest
+div.animtest
 {
-	background-color: blue;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
+	background-color: rgb(81, 0, 255);
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 50%;
+	animation: logoanim 6s ease infinite;
 }
 
 .fullscreenproject
@@ -377,11 +387,10 @@ div.projetsolo img.thumbnail
 }
 
 div.projetsolo .encart {
-	background-color: rgba(81, 0, 255, .85);
-	box-shadow: 5px 5px 20px black;
+	background-color: black;
 	height: auto;
 	widows: auto;
-	padding: 15px;
+	padding: 80px;
 	position: absolute;
 	top: 80%;
 	left: 75%;
