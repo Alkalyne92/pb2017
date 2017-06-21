@@ -122,13 +122,8 @@ color 				: #000;
 	height 			: 140px;
 	z-index 		: 10;
 	background-color: white;
-<<<<<<< HEAD
 	display 		: none;
 	transform: translateY(0px);
-=======
-	display 		: flex;
-	transform 		: translateY(0px);
->>>>>>> 0c3bcd0ed381b9c0322b8e08efad0177258652b5
 }
 
 #header .rotulus {
@@ -213,19 +208,11 @@ div.animtest
 {
 	position: absolute;
 	background-color: rgb(81, 0, 255);
-<<<<<<< HEAD
 	width: 20px;
 	height: 20px;
 	top: 60px;
 	left: 100px;
 	animation: logoanim 6s ease infinite;
-=======
-	width 			: 20px;
-	height 			: 20px;
-	position 		: relative;
-	top 			: 50%;
-	animation 		: logoanim 6s ease infinite;
->>>>>>> 0c3bcd0ed381b9c0322b8e08efad0177258652b5
 }
 
 .fullscreenproject
