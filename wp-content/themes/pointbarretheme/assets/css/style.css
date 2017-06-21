@@ -329,7 +329,7 @@ div.projetsolo
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-border: 1px solid purple;
+	border: 1px solid purple;
 	margin-bottom: 100px;
 }
 
@@ -355,7 +355,7 @@ div.projetsolo .encart {
 	top: 80%;
 	left: 75%;
 	transform: translateX(-50%) translateY(-50%);
-	width: 300px;
+	width: 500px;
 	color: white;
 	font-family: Grifo;
 	font-weight: 800;
@@ -364,4 +364,10 @@ div.projetsolo .encart {
 div.projetsolo:nth-child(even) .encart
 {
 	left: 25%;
+}
+
+
+div.projetsolo .encart p {
+	font-size: 0.7em;
+	line-height: 1.5em;
 }

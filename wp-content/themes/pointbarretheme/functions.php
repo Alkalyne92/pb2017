@@ -13,6 +13,12 @@ add_action('wp_enqueue_scripts', 'add_js_scripts');
 add_action('wp_ajax_mon_action', 'mon_action');
 add_action('wp_ajax_nopriv_mon_action', 'mon_action');
 
+function custom_excerpt_length( $length ) {
+    return 2;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 9 );
+
+
 function mon_action()
 {
 	$args = array('post_type' => 'projets', 'posts_per_page' => 2);
