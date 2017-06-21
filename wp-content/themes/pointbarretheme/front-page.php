@@ -28,18 +28,9 @@
 			<div id="quotewrapper">
 				<?php $quotequery = new WP_Query(array("post_type" => "Citations", "orderby" => "rand", "posts_per_page" => 1));
 					if ($quotequery->have_posts()) : while ($quotequery->have_posts()) : $quotequery->the_post(); ?>
-					<p id="quote"><?php the_content(); ?></p>
-					<p id="author">&mdash; <?php echo get_post_meta( $post->ID, 'Auteur', true ); ?></p>
+					<p id="quote" class="grow"><?php the_content(); ?></p>
+					<p id="author" class="grow">&mdash; <?php echo get_post_meta( $post->ID, 'Auteur', true ); ?></p>
 				<?php endwhile; endif; ?>
-			</div>
-		</div>
-		<div id="prescontainer">
-			<div id="preswrapper">
-				<p id="pres"> Point-Barre est un studio de design graphique spécialisé dans les technologies du web.<br/><br/>
-				Dirigé par Ronan Quidu et Julien Vivier, le studio développe des solutions créatives et innovantes prenant la forme d'identités visuelles, de chartes graphiques,
-				de motion design, de sites web ou de tout type d'applications web.<br/><br/>
-				Nous opérons également en tant que conseil pour l'élaboration de stratégies digitales.<br/><br/>
-				Les locaux sont situés au 12, rue Bleue dans le 9ème arrondissement de Paris.</p>
 			</div>
 		</div>
 	</div>
@@ -49,11 +40,15 @@
 					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post();
 					?>
 									
-			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('thumbnail'); ?>)">
+			<div class="projetsolo">
+				<figure>
+					<img src="<?php the_post_thumbnail_url(''); ?>" />
+				</figure>
 					<div class="encart">
 							<h2><?php the_title(); ?></h2>
 							<p><?php the_content(); ?></p>
 					</div>
+
 			</div> <!-- projet solo fin-->
 
 			
