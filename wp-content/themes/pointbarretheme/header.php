@@ -19,16 +19,17 @@
 </head>
 
 <body>
-	<div class="animtest"></div>
+	
 	<div id="header" class="blog-masthead">
-		<div class="rotulus">
+
 			<div class="container clearfix">
 				<ul class="nav nav-primary">
 				    <li class="active"><a href="#">Home</a></li>
 				    <?php wp_list_pages( '&title_li=' ); ?>
 				</ul>
 			</div>
-		</div>
+			
+		<div class="animtest"></div>
 	</div> 
 	<div class="container">
 			<div class="rotulus">

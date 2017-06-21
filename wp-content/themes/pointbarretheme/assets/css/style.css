@@ -122,7 +122,7 @@ color 				: #000;
 	height 			: 140px;
 	z-index 		: 10;
 	background-color: white;
-	display 		: none;
+	display 		: flex;
 	transform: translateY(0px);
 }
 
@@ -137,6 +137,7 @@ color 				: #000;
 }
 .nav li {
 	display 		: inline;
+	font-size 		: 4em;
 }
 
 .nav li a {
@@ -146,6 +147,7 @@ color 				: #000;
 
 .nav-primary {
 	padding 		: 0em;
+	width 			: 30%; 
 }
 
 
