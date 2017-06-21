@@ -245,7 +245,6 @@ div#homecontainer
 	height: 100vh;
 	width: 100%;
 	display: flex;
-	margin-bottom: 100px;
 }
 
 div#quotecontainer
@@ -348,42 +347,22 @@ div#projetscontainer
 	height 			: auto;
 	left 			: 50%;
 	transform 		: translateX(-50%);
+	margin-top: -60px;
 }
 
 /* ---------- PROJET SOLO ----*/
 div.projetsolo
 {
 	position 			: relative;
-	height 				: calc(100vh - 140px);
+	height 				: 60vh;
 	background-repeat 	: no-repeat;
 	background-position : center center;
 	background-size 	: 100% auto;
 	border 				: 1px solid purple;
-	margin-bottom 		: 100px;
+	margin-bottom 		: 50px;
 }
 
 /* ---------- PROJET SOLO : IMAGES ; ----*/
-div.projetsolo figure
-{
-	position 		: absolute;
-	width 			: 100%;
-	height 			: 100%;
-	top 			: 0;
-	left 			: 0;
-	/*background-color: yellow;*/
-}
-
-div.projetsolo figure img
-{
-	position 		: relative;
-	width 			: auto;
-	height 			: auto;
-	max-width 		: 100%;
-	max-height 		: 100%;
-	top 			: 50%;
-	left 			: 50%;
-	transform 		: translate(-50%, -50%);
-}
 
 div.projetsolo img.thumbnail
 {
@@ -397,10 +376,10 @@ div.projetsolo .encart {
 	widows 			: auto;
 	padding 		: 80px;
 	position 		: absolute;
-	top 			: 80%;
-	left 			: 75%;
+	top: 50%;
+	left: 75%;
 	transform 		: translateX(-50%) translateY(-50%);
-	width 			: 40%;
+	width 			: 30%;
 	color 			: white;
 	font-family 	: Grifo;
 	font-weight 	: 800;
