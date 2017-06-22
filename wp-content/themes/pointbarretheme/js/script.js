@@ -94,8 +94,48 @@ $(document).ready(function()
 	setTimeout(function()
 	{
 		console.log("SET TIME OUT");
-		$(".projetsolo")
-	}, 2000);
+		$(".projetsolo").first().animate(
+		{
+			'width' : '100%'
+		}, 300, function()
+		{
+			$(this).find('.projetsolooverlay').animate(
+			{
+				'opacity' : '0'
+			}, 300, function()
+			{
+				$(this).css('display', 'none');
+			})
+		})
+	}, 1500);
+
+	$(window).scroll(function(e)
+	{
+		$(".projetsolo").each(function(i)
+		{
+			var $this = $(this);
+			if (!$this.hasClass('open'))
+			{
+				if ($(window).scrollTop() > $this.offset().top - $(window).height())
+				{
+					$this.delay(200).animate(
+					{
+						'width' : '100%'
+					}, 300, function()
+					{
+						$(this).find('.projetsolooverlay').animate(
+						{
+							'opacity' : '0'
+						}, 300, function()
+						{
+							$(this).css('display', 'none');
+						})	
+					})
+					$(this).addClass('open');
+				}
+			}
+		})
+	})
 
 	// FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW
 

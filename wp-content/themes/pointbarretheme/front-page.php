@@ -38,17 +38,17 @@
 			<?php $projetsolo = new WP_Query(array("post_type" => "Projets"));
 					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post();
 					?>					
+			<div class="projetsolowrapper">
+				<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
+						<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">
 
-			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
-					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">
-
-							<h2><?php the_title(); ?></h2>
-							<p><?php the_excerpt(); ?></p>
-							<h4></h4>
-					</div>
-
-			</div> <!-- projet solo fin-->
-
+								<h2><?php the_title(); ?></h2>
+								<p><?php the_excerpt(); ?></p>
+								<h4></h4>
+						</div>
+						<div class="projetsolooverlay"></div>
+				</div> <!-- projet solo fin-->
+			</div>
 			
 			<?php endwhile; endif; ?>
 				</div> <!-- projet container fin-->
