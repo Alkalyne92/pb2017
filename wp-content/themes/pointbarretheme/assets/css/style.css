@@ -1,7 +1,7 @@
 /*
 Theme Name: Theme Point-Barre 2017
 Author: Point-Barre
-Description: Coucou c'est nous
+Description: Coucou c’est nous
 Version: 0.0.1
 Tags:
 */
@@ -323,11 +323,12 @@ p#author
 
 .grow div
 {
-	position 	 	: relative;
-	display 	 	: inline-block;
-	overflow 	 	: hidden;
-	height 	 		: auto;
-	/*background: rgba(0, 0, 0, 0.1);*/
+	position       : relative;
+	display        : inline-block;
+	overflow       : hidden;
+	height         : auto;
+	margin         : 0px 0px calc(-0.5rem - 3vmin) 0px;
+	line-height    : 1em;
 }
 .grow div span
 {
