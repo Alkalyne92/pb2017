@@ -6,6 +6,7 @@ Version: 0.0.1
 Tags:
 */
 
+
 @import url("animations.css");
 @import url("fonts.css");
 
@@ -61,30 +62,16 @@ color 				: red;
  font-size 			: 1.5em;
  }
 
+
+
+/* ---------- GRID ----*/
+
 .rotulus {
 	max-width 		: 1600px;
 	margin 			: auto;
 	padding 		: 0px 100px 0px 100px;
 	width 			: 100%;
 }
-
-#baseline {
-position            : absolute;
-right               : 10%;
-width               : 60%;
-max-width           : 250px;
-transform           : translateX(-50%);
-top                 : 10vh;
-text-align 			: left !important;
-/* 
-Pour logos svg
-fill	: #d34549;	*/
-color 				: #000;
-
-}
-
-
-
 
 .container
 {
@@ -130,6 +117,8 @@ color 				: #000;
 	text-align 		: right;
 }
 
+
+/* ---------- HEADER ----*/
 
 #header
 {
@@ -388,18 +377,7 @@ div.projetsolowrapper
 	position: relative;
 	height: 40vh;
 	width: 100%;
-	margin-bottom: 200px;
-}
-
-div.projetsolowrapper:first-child
-{
-	margin-top: 50px;
-}
-
-div.projetsolowrapper:not(:first-child)
-{
-	margin-top: 200px;
-	opacity: 0;
+	margin-bottom 		: 50px;
 }
 
 div.projetsolowrapper:nth-child(even) > div.projetsolo
@@ -443,8 +421,7 @@ div.projetsolowrapper .encart {
 	widows 			: auto;
 	padding 		: 50px;
 	position 		: absolute;
-	top 			: 80%;
-	transform 		: translateY(-50%);
+	bottom 			: 10%;
 	width 			: auto;
 	color 			: white;
 	font-family 	: Grifo;
@@ -504,30 +481,28 @@ div.projetsolo .grostitre p {
 	font-weight 	: 300;
 }
 
-div.projetsolowrapper:nth-child(even) .titlecontainer
+div.projetsolowrapper .titlecontainer
 {
-	z-index: 100;
-	position: absolute;
-	top 	 	 	: 50%;
-	left 	 	 	: 10%;
+	z-index 		: 100;
+	position 		: absolute;
+	top 	 	 	: 30%;
 	transform 	 	: translateY(-50%) scaleX(0);
 	transform-origin: left;
-	text-align: left;
-	width: auto;
-	padding: 40px;
+	text-align 		: left;
+	width 			: auto;
+}
+
+
+div.projetsolowrapper:nth-child(even) .titlecontainer
+{
+
+	left 	 	 	: -60px;
 }
 
 div.projetsolowrapper:nth-child(odd) .titlecontainer
 {
-	z-index: 100;
-	position: absolute;
-	top : 50%;
-	right: 10%;
-	transform 	 	: translateY(-50%) scaleX(0);
-	transform-origin: right;
-	text-align: right;
-	width: auto;
-	padding: 40px;
+
+	right 			: -60px;
 }
 
 div.projetsolowrapper .titlewrapper
@@ -535,16 +510,14 @@ div.projetsolowrapper .titlewrapper
 	width 	 	 	: auto;
 	text-align 	 	: right;
 	line-height 	: 1.4em;
-	font-size 		: 3em;
+	font-size 		: 3.5em;
 	font-family 	: Grifo-S-Medium;
-}
-
-div.titlewrapper
-{
 	opacity: 1;
 	display: flex;
-	width: auto;
+
 }
+
+
 
 div.titleoverlay
 {
