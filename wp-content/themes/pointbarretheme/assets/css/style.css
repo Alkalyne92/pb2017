@@ -57,7 +57,7 @@ color 				: red;
  -webkit-background-size: cover;
  background-size 	: cover;
  width 				: 100%;
- height 			:100vh;
+ height 			: 100vh;
  font-size 			: 1.5em;
  }
 
@@ -384,6 +384,7 @@ div#projetscontainer
 
 div.projetsolowrapper
 {
+	z-index: 1;
 	position: relative;
 	height: 60vh;
 	width: 100%;
@@ -486,14 +487,16 @@ div.projetsolo .grostitre p {
 }
 
 
-div.projetsolo#titlecontainer
+div.projetsolowrapper .titlecontainer
 {
+	z-index: 2;
 	position: relative;
-	height: 100%;
+	/* height: 100%; */
 	flex: 2;
+	top: 50%;
 }
 
-div.projetsolo:nth-child(odd) #titlewrapper
+div.projetsolowrapper:nth-child(odd) .titlewrapper
 {
 	position 	 	: absolute;
 	top 	 	 	: 50%;
@@ -508,9 +511,10 @@ div.projetsolo:nth-child(odd) #titlewrapper
 
 
 
-div.projetsolo:nth-child(even) #titlewrapper
+div.projetsolowrapper:nth-child(even) .titlewrapper
 {
 	position 	 	: absolute;
+	color: white;
 	top 	 	 	: 50%;
 	right 	 	 	: -10%;
 	transform 	 	: translateY(-50%);

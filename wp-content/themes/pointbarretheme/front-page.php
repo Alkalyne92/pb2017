@@ -41,16 +41,17 @@
 
 
 		<div class="projetsolowrapper">
-			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
-
-					<div id="titlecontainer">
-					<div id="titlewrapper">
+					<div class="titlecontainer">
+					<div class="titlewrapper">
 						<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
 					</div>
 					</div>
+
+			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
+
+
 					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">
 
-							
 							<p><?php the_category(); ?></p>
 							<h4></h4>
 					</div>
