@@ -423,26 +423,36 @@ div.projetsolo img.thumbnail
 }
 
 /* ---------- PROJET SOLO : ENCART ; ----*/
-div.projetsolo .encart {
+div.projetsolowrapper:nth-child(even) .encart {
 	background-color: black;
 	height 			: auto;
 	widows 			: auto;
 	padding 		: 80px;
 	position 		: absolute;
 	top 			: 50%;
-	left 			: 75%;
-	transform 		: translateX(-50%) translateY(-50%);
+	left 			: -60px;
+	transform 		: translateY(-50%);
 	width 			: 30%;
 	color 			: white;
 	font-family 	: Grifo;
 	font-weight 	: 800;
-	display: none;
 }
 
-div.projetsolo:nth-child(even) .encart
-{
-	left 			: 25%;
+div.projetsolowrapper:nth-child(odd) .encart {
+	background-color: black;
+	height 			: auto;
+	widows 			: auto;
+	padding 		: 80px;
+	position 		: absolute;
+	top 			: 50%;
+	right 			: -60px;
+	transform 		: translateY(-50%);
+	width 			: 30%;
+	color 			: white;
+	font-family 	: Grifo;
+	font-weight 	: 800;
 }
+
 
 /* ---------- PROJET SOLO : ENCART CONTENU ; ----*/
 div.projetsolo .encart h2 {
