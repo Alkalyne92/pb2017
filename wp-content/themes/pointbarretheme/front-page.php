@@ -58,7 +58,7 @@
 					<div class="encartoverlay"></div>
 					
 				</div>	
-					<div class="projetsolooverlay"></div>
+					<div class="projetsolooverlay" style="background-color: <?php echo get_post_meta($post->ID, 'Couleur Encart', true); ?>"></div>
 				</div> <!-- projet solo fin-->
 			</div>
 
