@@ -145,6 +145,14 @@ $(document).ready(function()
 					$this.addClass('open');
 				}
 			}
+			// PARALLAX POUR LES THUMBNAIL DES PROJETS
+			var on = $this.offset().top - $(window).height();
+			var off = $this.offset().top + $this.height();
+			if ($(window).scrollTop() > on && $(window).scrollTop() < off)
+			{
+				if (i == 0) console.log(($(window).scrollTop() - on)/(off - on)) + '%'
+				$this.css('background-position-y', ($(window).scrollTop() - on)/(off - on)*50 + '%');
+			}
 		});
 	})
 
