@@ -430,11 +430,11 @@ div.projetsolowrapper .encart {
 	background-color: black;
 	height 			: auto;
 	widows 			: auto;
-	padding 		: 80px;
+	padding 		: 50px;
 	position 		: absolute;
 	top 			: 80%;
 	transform 		: translateY(-50%);
-	width 			: 25%;
+	width 			: auto;
 	color 			: white;
 	font-family 	: Grifo;
 	font-weight 	: 800;
@@ -524,8 +524,8 @@ div.projetsolowrapper .titlewrapper
 	width 	 	 	: auto;
 	text-align 	 	: right;
 	line-height 	: 1.4em;
-	font-size: 2em;
-	font-family: Grifo-S-Medium;
+	font-size 		: 3em;
+	font-family 	: Grifo-S-Medium;
 }
 
 div.titlewrapper

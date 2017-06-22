@@ -47,10 +47,17 @@
 					<div class="titleoverlay" style="background-color: <?php echo get_post_meta( $post->ID, 'Couleur Encart', true); ?>"></div>
 				</div>
 				<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
+								
+				<div class="encartcontainer">
+
 					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">							
 						<p><?php the_category(); ?></p>
 						<h4></h4>
 					</div>
+				
+					<div class="encartoverlay"></div>
+					
+				</div>	
 					<div class="projetsolooverlay"></div>
 				</div> <!-- projet solo fin-->
 			</div>
