@@ -139,7 +139,37 @@ $(document).ready(function()
 						}, 300, function()
 						{
 							$(this).css('display', 'none');
-						})	
+							$('.titlecontainer').eq(i).velocity(
+							{
+								translateY: ['-50%', '-50%'],
+								scaleX: [1, 0],
+							},
+							{
+								duration: 300,
+								complete: function()
+								{	
+									if (i % 2 == 0) $(this).find('.titleoverlay').css('transform-origin', 'left');
+									else $(this).find('.titleoverlay').css('transform-origin', 'right');
+									$(this).find('.titleoverlay').velocity(
+									{
+										scaleX: [0, 1]
+									},
+									{
+										duration: 300,
+										complete: function()
+										{
+											$(this).css('display', 'none');
+											$('.encart').eq(i).animate(
+											{
+												'bottom' : '10%',
+												'opacity' : '1'
+											}, 300);
+										}
+									})	
+								}
+							})
+						})
+						
 					})
 					
 					$this.addClass('open');
@@ -150,50 +180,49 @@ $(document).ready(function()
 			var off = $this.offset().top + $this.height();
 			if ($(window).scrollTop() > on && $(window).scrollTop() < off)
 			{
-				if (i == 0) console.log(($(window).scrollTop() - on)/(off - on)) + '%'
 				$this.css('background-position-y', ($(window).scrollTop() - on)/(off - on)*100 + '%');
 			}
 		});
 	})
 
-	$(window).scroll(function(e)
-	{
-		$(".titlecontainer").each(function(i)
-		{
-			var $this = $(this);
-			if (!$this.hasClass('open'))
-			{
-				if ($(window).scrollTop() > $this.offset().top - $(window).height())
-				{
-					$this.delay(600).velocity(
-					{
-						translateY: ['-50%', '-50%'],
-						scaleX: [1, 0],
-					},
-					{
-						duration: 300,
-						complete: function()
-						{	
-							if (i % 2 == 0) $(this).find('.titleoverlay').css('transform-origin', 'left');
-							else $(this).find('.titleoverlay').css('transform-origin', 'right');
-							$(this).find('.titleoverlay').velocity(
-							{
-								scaleX: [0, 1]
-							},
-							{
-								duration: 300,
-								complete: function()
-								{
-									$(this).css('display', 'none');
-								}
-							})	
-						}
-					})
-					$this.addClass('open');
-				}
-			}
-		})
-	})
+	// $(window).scroll(function(e)
+	// {
+	// 	$(".titlecontainer").each(function(i)
+	// 	{
+	// 		var $this = $(this);
+	// 		if (!$this.hasClass('open'))
+	// 		{
+	// 			if ($(window).scrollTop() > $this.offset().top - $(window).height())
+	// 			{
+	// 				$this.delay(600).velocity(
+	// 				{
+	// 					translateY: ['-50%', '-50%'],
+	// 					scaleX: [1, 0],
+	// 				},
+	// 				{
+	// 					duration: 300,
+	// 					complete: function()
+	// 					{	
+	// 						if (i % 2 == 0) $(this).find('.titleoverlay').css('transform-origin', 'left');
+	// 						else $(this).find('.titleoverlay').css('transform-origin', 'right');
+	// 						$(this).find('.titleoverlay').velocity(
+	// 						{
+	// 							scaleX: [0, 1]
+	// 						},
+	// 						{
+	// 							duration: 300,
+	// 							complete: function()
+	// 							{
+	// 								$(this).css('display', 'none');
+	// 							}
+	// 						})	
+	// 					}
+	// 				})
+	// 				$this.addClass('open');
+	// 			}
+	// 		}
+	// 	})
+	// })
 
 
 

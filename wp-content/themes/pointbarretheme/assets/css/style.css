@@ -421,11 +421,12 @@ div.projetsolowrapper .encart {
 	widows 			: auto;
 	padding 		: 50px;
 	position 		: absolute;
-	bottom 			: 10%;
+	bottom 			: -10%;
 	width 			: auto;
 	color 			: white;
 	font-family 	: Grifo;
 	font-weight 	: 800;
+	opacity: 0;
 }
 
 div.projetsolowrapper:nth-child(even) .encart {
