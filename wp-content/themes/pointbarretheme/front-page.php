@@ -39,6 +39,8 @@
 					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post();
 					?>					
 
+
+		<div class="projetsolowrapper">
 			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
 
 					<div id="titlecontainer">
@@ -53,11 +55,13 @@
 							<h4></h4>
 					</div>
 
+				<div class="projetsolooverlay"></div>
 			</div> <!-- projet solo fin-->
+		</div>
 
 			
 			<?php endwhile; endif; ?>
-				</div> <!-- projet container fin-->
+	</div> <!-- projet container fin-->
 
 	<div class="fullscreenproject"> </div>
 	<?php get_footer(); ?>
