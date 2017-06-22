@@ -57,7 +57,7 @@ color 				: red;
  -webkit-background-size: cover;
  background-size 	: cover;
  width 				: 100%;
- height 			:100vh;
+ height 			: 100vh;
  font-size 			: 1.5em;
  }
 
@@ -384,6 +384,7 @@ div#projetscontainer
 
 div.projetsolowrapper
 {
+	z-index: 1;
 	position: relative;
 	height: 60vh;
 	width: 100%;
@@ -486,35 +487,35 @@ div.projetsolo .grostitre p {
 	font-weight 	: 300;
 }
 
-
-div.projetsolo .titlecontainer
+div.projetsolowrapper:nth-child(even) .titlecontainer
 {
-	position: relative;
-	height: 100%;
+	z-index: 100;
+	position: absolute;
+	top 	 	 	: 50%;
+	left 	 	 	: 15%;
+	transform 	 	: translateY(-50%) scaleX(0);
+	transform-origin: left;
+	text-align: left;
+	width: auto;
+	padding: 40px;
 }
 
-div.projetsolo:nth-child(odd) .titlewrapper
+div.projetsolowrapper:nth-child(odd) .titlecontainer
 {
-	position 	 	: absolute;
-	top 	 	 	: 50%;
-	left 	 	 	: 50%;
-	transform 	 	: translate(-50%, -50%);
+	z-index: 100;
+	position: absolute;
+	top : 50%;
+	right: 15%;
+	transform 	 	: translateY(-50%) scaleX(0);
+	transform-origin: right;
+	text-align: right;
+	width: auto;
+	padding: 40px;
+}
+
+div.projetsolowrapper .titlewrapper
+{
 	width 	 	 	: auto;
-	text-align 	 	: left;
-	line-height 	: 1.4em;
-	font-size: 2em;
-	font-family: Grifo-S-Medium;
-}
-
-
-
-div.projetsolo:nth-child(even) .titlewrapper
-{
-	position 	 	: absolute;
-	top 	 	 	: 50%;
-	right 	 	 	: 50%;
-	transform 	 	: translate(-50%, -50%);
-	width 	 	 	: 100%;
 	text-align 	 	: right;
 	line-height 	: 1.4em;
 	font-size: 2em;
@@ -530,8 +531,10 @@ div.titlewrapper
 
 div.titleoverlay
 {
-	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(81, 0, 255, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: green;
 }

@@ -36,24 +36,21 @@
 
 	<div id="projetscontainer">
 			<?php $projetsolo = new WP_Query(array("post_type" => "Projets"));
-					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post();
-					?>					
+					if ($projetsolo->have_posts()) : while ($projetsolo->have_posts()) : $projetsolo->the_post(); ?>					
 
 
 			<div class="projetsolowrapper">
+				<div class="titlecontainer">
+					<div class="titlewrapper">
+						<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
+					</div>
+					<div class="titleoverlay"></div>
+				</div>
 				<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
-
-						<div class="titlecontainer">
-							<div class="titlewrapper">
-								<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
-								<div class="titleoverlay"></div>
-							</div>
-						</div>
-						<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">							
-								<p><?php the_category(); ?></p>
-								<h4></h4>
-						</div>
-
+					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">							
+						<p><?php the_category(); ?></p>
+						<h4></h4>
+					</div>
 					<div class="projetsolooverlay"></div>
 				</div> <!-- projet solo fin-->
 			</div>

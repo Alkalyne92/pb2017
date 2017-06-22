@@ -137,6 +137,45 @@ $(document).ready(function()
 		});
 	})
 
+	$(window).scroll(function(e)
+	{
+		$(".titlecontainer").each(function(i)
+		{
+			var $this = $(this);
+			if (!$this.hasClass('open'))
+			{
+				if ($(window).scrollTop() > $this.offset().top - $(window).height())
+				{
+					$this.delay(200).velocity(
+					{
+						translateY: ['-50%', '-50%'],
+						scaleX: [1, 0],
+					},
+					{
+						duration: 300,
+						complete: function()
+						{	
+							if (i % 2 == 0) $(this).find('.titleoverlay').css('transform-origin', 'left');
+							else $(this).find('.titleoverlay').css('transform-origin', 'right');
+							$(this).find('.titleoverlay').velocity(
+							{
+								scaleX: [0, 1]
+							},
+							{
+								duration: 300,
+								complete: function()
+								{
+									$(this).css('display', 'none');
+								}
+							})	
+						}
+					})
+					$this.addClass('open');
+				}
+			}
+		})
+	})
+
 	// FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW
 
 	// SPLIT WORDS
