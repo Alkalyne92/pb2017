@@ -386,7 +386,7 @@ div.projetsolowrapper
 {
 	z-index: 1;
 	position: relative;
-	height: 60vh;
+	height: 40vh;
 	width: 100%;
 	margin-bottom 		: 50px;
 }
@@ -498,7 +498,7 @@ div.projetsolowrapper:nth-child(even) .titlecontainer
 	z-index: 100;
 	position: absolute;
 	top 	 	 	: 50%;
-	left 	 	 	: 15%;
+	left 	 	 	: 10%;
 	transform 	 	: translateY(-50%) scaleX(0);
 	transform-origin: left;
 	text-align: left;
@@ -511,7 +511,7 @@ div.projetsolowrapper:nth-child(odd) .titlecontainer
 	z-index: 100;
 	position: absolute;
 	top : 50%;
-	right: 15%;
+	right: 10%;
 	transform 	 	: translateY(-50%) scaleX(0);
 	transform-origin: right;
 	text-align: right;
