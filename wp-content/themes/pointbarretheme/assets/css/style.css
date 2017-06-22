@@ -96,36 +96,38 @@ color 				: #000;
 
 
 
+/* ---------- FOOTER ----*/
 
-
-#footer p {
-   color: inherit;
-   top:50%;
-   display: inline-block;
-   font-size: 0.4em;
+#footer-sidebar p {
+   color 			: black;
+   top 				:50%;
+   display 			: inline-block;
+   font-size 		: 0.5em;
 }
 
 #footer-sidebar {
-display:block;
-height: 150px;
+	display 		:block;
+	height 			: 150px;
 }
 
 #footer-sidebar1 {
-float: left;
-width: 340px;
-margin-left:5px;
-margin-right:5px;
+	float 			: left;
+	width 			: 33%;
+	padding-top 	: 10px;
 }
 
 #footer-sidebar2 {
-float: left;
-width: 340px;
-margin-right:5px;
+	float 			: left;
+	width 			: 33%;
+	padding-top 	: 10px;
+	text-align 		: center;
 }
 
 #footer-sidebar3 {
-float: left;
-width: 340px;
+	float 			: left;
+	width 			: 33%;
+	padding-top 	: 10px;
+	text-align 		: right;
 }
 
 
@@ -432,3 +434,22 @@ div.projetsolo .encart p {
 	font-family 	: Sul Sans;
 	font-weight 	: 300;
 }
+
+
+/* ---------- PROJET SOLO : GROSTITRE CONTENU ; ----*/
+div.projetsolo .grostitre h2 {
+	font-size 		: 4em;
+	font-family 	: Grifo;
+	font-weight 	: 600;
+	margin-bottom 	: 20px;
+	margin-top: 12%;
+	margin-left: -50px;
+}
+
+div.projetsolo .grostitre p {
+	font-size 		: 0.7em;
+	line-height 	: 1.5em;
+	font-family 	: Sul Sans;
+	font-weight 	: 300;
+}
+
