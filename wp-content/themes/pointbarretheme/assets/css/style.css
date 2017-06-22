@@ -437,6 +437,7 @@ div.projetsolowrapper:nth-child(even) .encart {
 	color 			: white;
 	font-family 	: Grifo;
 	font-weight 	: 800;
+	display: none;
 }
 
 div.projetsolowrapper:nth-child(odd) .encart {
@@ -452,6 +453,7 @@ div.projetsolowrapper:nth-child(odd) .encart {
 	color 			: white;
 	font-family 	: Grifo;
 	font-weight 	: 800;
+	display: none;
 }
 
 
