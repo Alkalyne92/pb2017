@@ -40,14 +40,18 @@
 					?>					
 
 			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
-		<!-- ENCART <div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"> -->
-							
-					<div class="grostitre">	
-							<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
-							
-					</div>	 <!-- .grostitre -->
 
-		<!-- ENCART </div> // -->
+					<div id="titlecontainer">
+					<div id="titlewrapper">
+						<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
+					</div>
+					</div>
+					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">
+
+							
+							<p><?php the_category(); ?></p>
+							<h4></h4>
+					</div>
 
 			</div> <!-- projet solo fin-->
 
