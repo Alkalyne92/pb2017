@@ -86,25 +86,6 @@ color 				: #000;
 
 
 
-#infos {
-	color	 		: #ffffff;
-	position        : absolute;
-	left            : 50%;
-	transform       : translateX(-50%);
-	top             : 90vh;
-	text-align      : center;
-	line-height     : 1.9em;
-	font-size 		: 0.7em;
-}
-
-#infos a {
-	color	 		: #ffffff;
-	webkit-transition: all 0.2s ease;
-   transition       : all 0.2s ease;
-   text-decoration  : none;
-
-}
-
 .container
 {
 	width 			: 100%;
@@ -112,6 +93,41 @@ color 				: #000;
 	margin 			: 0;
 	padding 		: 0;
 }
+
+
+
+
+
+#footer p {
+   color: inherit;
+   top:50%;
+   display: inline-block;
+   font-size: 0.4em;
+}
+
+#footer-sidebar {
+display:block;
+height: 150px;
+}
+
+#footer-sidebar1 {
+float: left;
+width: 340px;
+margin-left:5px;
+margin-right:5px;
+}
+
+#footer-sidebar2 {
+float: left;
+width: 340px;
+margin-right:5px;
+}
+
+#footer-sidebar3 {
+float: left;
+width: 340px;
+}
+
 
 #header
 {
