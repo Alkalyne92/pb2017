@@ -96,7 +96,7 @@ $(document).ready(function()
 		console.log("SET TIME OUT");
 		$(".projetsolowrapper").first().find('.projetsolo').animate(
 		{
-			'width' : '100%'
+			width : '100%'
 		}, 300, function()
 		{
 			$(this).find('.projetsolooverlay').animate(
@@ -105,8 +105,12 @@ $(document).ready(function()
 			}, 300, function()
 			{
 				$(this).css('display', 'none');
+				$(".projetsolowrapper").first().animate(
+				{
+					'margin-top' : '0px'
+				}, 300)
 			})
-		})
+		});
 	}, 1500);
 
 	$(window).scroll(function(e)
@@ -116,11 +120,17 @@ $(document).ready(function()
 			var $this = $(this);
 			if (!$this.hasClass('open'))
 			{
-				if ($(window).scrollTop() > $this.offset().top - $(window).height())
+				if ($(window).scrollTop() > $this.offset().top - $(window).height() + ($this.height()*0.5))
 				{
+					$this.parent().animate(
+					{
+						'margin-top' : '0px',
+						'opacity' : '1',
+					}, 800);
 					$this.delay(200).animate(
 					{
-						'width' : '100%'
+						'width' : '100%',
+
 					}, 300, function()
 					{
 						$(this).find('.projetsolooverlay').animate(
@@ -131,6 +141,7 @@ $(document).ready(function()
 							$(this).css('display', 'none');
 						})	
 					})
+					
 					$this.addClass('open');
 				}
 			}
@@ -146,7 +157,7 @@ $(document).ready(function()
 			{
 				if ($(window).scrollTop() > $this.offset().top - $(window).height())
 				{
-					$this.delay(200).velocity(
+					$this.delay(600).velocity(
 					{
 						translateY: ['-50%', '-50%'],
 						scaleX: [1, 0],

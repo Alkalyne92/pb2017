@@ -388,7 +388,18 @@ div.projetsolowrapper
 	position: relative;
 	height: 40vh;
 	width: 100%;
-	margin-bottom 		: 50px;
+	margin-bottom: 200px;
+}
+
+div.projetsolowrapper:first-child
+{
+	margin-top: 50px;
+}
+
+div.projetsolowrapper:not(:first-child)
+{
+	margin-top: 200px;
+	opacity: 0;
 }
 
 div.projetsolowrapper:nth-child(even) > div.projetsolo
