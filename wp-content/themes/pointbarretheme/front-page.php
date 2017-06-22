@@ -40,24 +40,23 @@
 					?>					
 
 
-		<div class="projetsolowrapper">
-			<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
+			<div class="projetsolowrapper">
+				<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
 
-					<div id="titlecontainer">
-					<div id="titlewrapper">
-						<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
-					</div>
-					</div>
-					<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">
+						<div class="titlecontainer">
+							<div class="titlewrapper">
+								<h2 style="color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;"><?php the_title(); ?></h2>
+								<div class="titleoverlay"></div>
+							</div>
+						</div>
+						<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">							
+								<p><?php the_category(); ?></p>
+								<h4></h4>
+						</div>
 
-							
-							<p><?php the_category(); ?></p>
-							<h4></h4>
-					</div>
-
-				<div class="projetsolooverlay"></div>
-			</div> <!-- projet solo fin-->
-		</div>
+					<div class="projetsolooverlay"></div>
+				</div> <!-- projet solo fin-->
+			</div>
 
 			
 			<?php endwhile; endif; ?>

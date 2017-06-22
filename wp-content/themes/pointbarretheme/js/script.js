@@ -94,7 +94,7 @@ $(document).ready(function()
 	setTimeout(function()
 	{
 		console.log("SET TIME OUT");
-		$(".projetsolo").first().animate(
+		$(".projetsolowrapper").first().find('.projetsolo').animate(
 		{
 			'width' : '100%'
 		}, 300, function()
@@ -131,10 +131,10 @@ $(document).ready(function()
 							$(this).css('display', 'none');
 						})	
 					})
-					$(this).addClass('open');
+					$this.addClass('open');
 				}
 			}
-		})
+		});
 	})
 
 	// FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW
