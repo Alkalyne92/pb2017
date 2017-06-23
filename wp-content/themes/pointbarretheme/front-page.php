@@ -48,7 +48,7 @@
 				</div>
 				<div class="projetsolo" style="background-image: url(<?php the_post_thumbnail_url('') ?>)">
 					<div class="rollover">
-						<span><p class="hovertext">VOIR LE PROJET</p></span>
+						<span><p class="hovertext grow">VOIR LE PROJET</p></span>
 					</div>				
 					<div class="encartcontainer">
 						<div class="encart" style="background-color:<?php echo get_post_meta( $post->ID, 'Couleur Encart', true ); ?> ;">							
