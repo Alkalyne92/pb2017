@@ -24,71 +24,6 @@ $(document).ready(function()
 
 	$("p#quote").fitText(1, { minFontSize: '45px'});
 
-
-
-
-	// var fired = false;
-
-	// $('.openproject').click(function()
-	// {
-	// 	var permalink = $(this).data('permalink');
-	// 	$(".fullscreenproject").load(permalink);
-	// 	$(".fullscreenproject").css('display', 'inline');
-	// 	$(".fullscreenproject").animate(
-	// 		{
-	// 			'opacity' : '0'
-	// 		}, 250);
-	// 	return false;
-	// });
-
-	// $('.fullscreenproject').click(function()
-	// {
-	// 	$(".fullscreenproject").animate(
-	// 		{
-	// 			'opacity' : '0'
-	// 		}, 250);
-	// 	setTimeout(function()
-	// 		{
-	// 			$(".fullscreenproject").css('display', 'none');
-	// 			$(".fullscreenproject").load('');
-	// 		}, 250, function()
-	// 		{
-	// 			fired = false;
-	// 		});
-	// 	return false;
-	// });
-
-
-	// $(window).on('scroll mousewheel DOMMouseScroll onmousewheel', function(e)
-	// {
-	// 	if (e.originalEvent.wheelDelta < 0 && !fired)
-	// 	{
-	// 		fired = true;
-	// 		console.log("SCROLLING DOWN\n");
-	// 		var permalink = "http://localhost:8888/pb2017/projets/projet-4";
-	// 		$(".fullscreenproject").load(permalink);
-	// 		$(".fullscreenproject").css('display', 'inline');
-	// 		$(".fullscreenproject").animate(
-	// 			{
-	// 				'opacity' : '1'
-	// 			}, 250);
-	// 	}
-	// 	else
-	// 	{
-	// 		// scrolling up
-	// 		console.log("SCROLLING UP\n");
-	// 	}
-	// });
-
-	// ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO AN
-
-	// var triangle = [[1, 1], [2, 1], [1.5, 2]],
- //    	pentagon = [[0, 0], [1, 1], [3, 1], [2, 0.5], [0, 1]];
-
-	// var interpolator = flubber.interpolate(triangle, pentagon);
-
-	// d3.select("path").transition().attrTween("d", function(){ return interpolator; });
-
 	// REVEAL HOME PROJECTS
 
 	setTimeout(function()
@@ -186,68 +121,70 @@ $(document).ready(function()
 			}
 
 		});
-	})
+	});
 
-	// $(window).scroll(function(e)
-	// {
-	// 	$(".titlecontainer").each(function(i)
-	// 	{
-	// 		var $this = $(this);
-	// 		if (!$this.hasClass('open'))
-	// 		{
-	// 			if ($(window).scrollTop() > $this.offset().top - $(window).height())
-	// 			{
-	// 				$this.delay(600).velocity(
-	// 				{
-	// 					translateY: ['-50%', '-50%'],
-	// 					scaleX: [1, 0],
-	// 				},
-	// 				{
-	// 					duration: 300,
-	// 					complete: function()
-	// 					{	
-	// 						if (i % 2 == 0) $(this).find('.titleoverlay').css('transform-origin', 'left');
-	// 						else $(this).find('.titleoverlay').css('transform-origin', 'right');
-	// 						$(this).find('.titleoverlay').velocity(
-	// 						{
-	// 							scaleX: [0, 1]
-	// 						},
-	// 						{
-	// 							duration: 300,
-	// 							complete: function()
-	// 							{
-	// 								$(this).css('display', 'none');
-	// 							}
-	// 						})	
-	// 					}
-	// 				})
-	// 				$this.addClass('open');
-	// 			}
-	// 		}
-	// 	})
-	// })
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
 
+	$('.projetsolowrapper').mouseover(function(e)
+	{
+		$this = $(this);
+		$this.find('.titlecontainer').stop().animate(
+		{
+			'opacity' : '0',
+		}, 300);
+		$this.find('.encart').stop().animate(
+		{
+			'opacity' : '0',
+		}, 300);
+		$this.find('.rollover').css('display', 'inline');
+		$this.find('.rollover').stop().animate(
+		{
+			'opacity' : '1'
+		}, 300);
+		console.log($this.find('.hovertext'));
+	});
 
-
-
-
+	$('.projetsolowrapper').mouseout(function(e)
+	{
+		$this = $(this);
+		$this.find('.titlecontainer').stop().animate(
+		{
+			'opacity' : '1',
+		}, 300);
+		$this.find('.encart').stop().animate(
+		{
+			'opacity' : '1',
+		}, 300);
+		$this.find('.rollover').stop().animate(
+		{
+			'opacity' : '0'
+		}, 300);
+		$this.find('.rollover').css('display', 'none');
+	});
 
 	// FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW
 
 	// SPLIT WORDS
 
-	$('.grow').each(function(i)
+	function growSplit()
 	{
-		var $tag, text, words;
-		$tag = $(this);
-		text = $tag.text().trim();
-		$tag.text('');
-		words = text.split(/\s+/);
-		for (var i=words.length; i--;)
+		$('.grow').each(function(i)
 		{
-			$('<div><span>'+words[i]+'&nbsp;</span></div>').prependTo($tag);
-		}
-	});
+			var $tag, text, words;
+			$tag = $(this);
+			text = $tag.text().trim();
+			$tag.text('');
+			words = text.split(/\s+/);
+			for (var i=words.length; i--;)
+			{
+				$('<div><span>'+words[i]+'&nbsp;</span></div>').prependTo($tag);
+			}
+		});
+	}
+
+	growSplit();
 
 	// REVEAL GROW TEXT
 
@@ -317,6 +254,7 @@ $(document).ready(function()
 	}
 
 	// SCREEN TOTALLY REVEALED
+	
 	var pageDefer = $.Deferred();
 	$.when(revealFxGrow(), revealFxSlide()).then(function()
 	{
