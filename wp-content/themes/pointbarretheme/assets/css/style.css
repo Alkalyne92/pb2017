@@ -47,6 +47,16 @@ clear : both;
 zoom  : 1;
 }
 
+.darken
+{
+	filter: brightness(0.5);
+}
+
+.blurry
+{
+	filter: blur(2px);
+}
+
 
 body{
 font-family 		: "minerva-modern",sans-serif;
@@ -385,6 +395,8 @@ div.projetsolowrapper
 	height: 40vh;
 	width: 100%;
 	margin-bottom 		: 150px;
+	cursor: pointer;
+	transition: .3s;
 }
 
 div.projetsolowrapper:nth-child(even) > div.projetsolo
@@ -420,7 +432,6 @@ div.projetsolo img.thumbnail
 
 /* ---------- PROJET SOLO : ENCART ; ----*/
 
-
 div.projetsolowrapper .encart {
 	background-color: black;
 	height 			: auto;
@@ -433,6 +444,7 @@ div.projetsolowrapper .encart {
 	font-family 	: Grifo;
 	font-weight 	: 800;
 	opacity: 0;
+	margin-top: 0px;
 }
 
 div.projetsolowrapper:nth-child(even) .encart {
@@ -498,6 +510,7 @@ div.projetsolowrapper .titlecontainer
 	text-align 		: left;
 	width 			: auto;
 	padding: 10px;
+	opacity: 1;
 }
 
 
@@ -526,8 +539,6 @@ div.projetsolowrapper .titlewrapper
 
 }
 
-
-
 div.titleoverlay
 {
 	width: 100%;
@@ -535,4 +546,25 @@ div.titleoverlay
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+div.rollover
+{
+	opacity: 0;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+div.rollover span
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Grifo;
+	font-size: 3em;
+	color: white;
 }

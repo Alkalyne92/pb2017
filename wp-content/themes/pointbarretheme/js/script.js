@@ -186,7 +186,47 @@ $(document).ready(function()
 			}
 
 		});
-	})
+	});
+
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+
+	$('.projetsolowrapper').mouseover(function(e)
+	{
+		$this = $(this);
+		$this.find('.titlecontainer').stop().animate(
+		{
+			'opacity' : '0',
+		}, 300);
+		$this.find('.encart').stop().animate(
+		{
+			'opacity' : '0',
+		}, 300);
+		$this.find('.rollover').css('display', 'inline');
+		$this.find('.rollover').stop().animate(
+		{
+			'opacity' : '1'
+		}, 300);
+	});
+
+	$('.projetsolowrapper').mouseout(function(e)
+	{
+		$this = $(this);
+		$this.find('.titlecontainer').stop().animate(
+		{
+			'opacity' : '1',
+		}, 300);
+		$this.find('.encart').stop().animate(
+		{
+			'opacity' : '1',
+		}, 300);
+		$this.find('.rollover').stop().animate(
+		{
+			'opacity' : '0'
+		}, 300);
+		$this.find('.rollover').css('display', 'none');
+	});
 
 	// $(window).scroll(function(e)
 	// {
