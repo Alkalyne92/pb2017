@@ -2,23 +2,31 @@ $(document).ready(function()
 {
 	// NAV OPENING/CLOSING
 
-	var open = 0;
-	$('.animtest').click(function()
+	$('#hamburger').mouseenter(function()
 	{
-		if (open % 2 == 0)
-		{
-			$('.nav-wrap').animate({
-			'right':'0'
-			}, 500);
-		}
-		else
-		{
-			$('.nav-wrap').animate({
-			'right':'-800px'
-			}, 500);	
-		}
-		open++;
+		
+			$('.nav-wrap').stop().velocity({
+			translateX:['0%', '100%']
+			},
+			{
+				duration: 300,
+				easing: "easeInOutCubic",
+			});
 	});
+
+$('.nav-wrap').mouseleave(function()
+	{
+	$('.nav-wrap').stop().velocity({
+			translateX:['100%', '0%']
+			},
+			{
+				duration: 300,
+
+			});
+});
+
+
+
 
 	// FIT TEXT
 

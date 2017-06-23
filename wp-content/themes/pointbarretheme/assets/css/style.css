@@ -153,25 +153,85 @@ color 				: red;
 
 /* ---------- NAVIGATION ----*/
 
+
+#hamburger{
+  right: 0px;
+  width:60px;
+  position:absolute;
+  top:10vh;
+  transform:translate(-50%,-50%);
+  padding:10px;
+  cursor:pointer;
+}
+
+
+
+#hamburger i{
+  display:block;
+  background:blue;
+  height:3px;
+  margin-top:10px;
+  position:relative;
+}
+
+#hamburger i:after{
+  content:"";
+  width:0%;
+  position:absolute;
+  height:100%;
+  background-color: white;
+  transition:0.3s;
+}
+
+#hamburger i:nth-child(2):after{transition-delay:0.1s;}
+#hamburger i:nth-child(3):after{transition-delay:0.2s;}
+#hamburger:hover i:after{width:100%;}
+
+
+
+
+
 .nav-wrap
 {
 	position: absolute;
     /* float: right; */
     right: 0px;
-    border: solid;
     width: auto;
     height: 100vh;
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Grifo';
     background: white;
     padding: 60px;
     display 		: flex;
 	flex-direction : column;
+	color: rgb(81, 0, 255);
+	line-height:1.5em;
+	transform: translateX(100%);
+
 }
 
 .nav-wrap div
 {
 	width: auto;
+	align-self:flex-end;
+}
+
+.souligney::after
+{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background-color: rgb(81, 0, 255);
+	display: block;
+	margin-top: -10px;
+	transition: .5s;
+	float: right;
+}
+
+.souligney:hover::after
+{
+	width: 100%;
+	float: left;
 }
 
 .nav {

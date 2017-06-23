@@ -21,14 +21,18 @@
 <body>
 	
 	<div id="header" class="blog-masthead">
-
+			<div id="hamburger">
+			  <i></i>
+			  <i></i>
+			  <i></i>
+			</div>
 			<div class="container nav-wrap">
 
 				    <?php 
 						$pages = get_pages(); 
 						foreach ( $pages as $page )
 						{
-						    echo "<div class='nav-item'> <p style='width:auto;'>" . $page->post_title .  "</p></div>";
+						    echo "<div class='nav-item'> <p class='souligney'>" . $page->post_title .  "</p></div>";
  
 						    
 						}
