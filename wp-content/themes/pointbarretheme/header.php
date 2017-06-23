@@ -22,10 +22,18 @@
 	
 	<div id="header" class="blog-masthead">
 
-			<div class="container clearfix nav-wrap">
-				<ul class="nav nav-primary">
-				    <?php wp_list_pages( '&title_li=' ); ?>
-				</ul>
+			<div class="container nav-wrap">
+
+				    <?php 
+						$pages = get_pages(); 
+						foreach ( $pages as $page )
+						{
+						    echo "<div class='nav-item'> <p style='width:auto;'>" . $page->post_title .  "</p></div>";
+ 
+						    
+						}
+					?>
+						
 			</div>
 
 		<div class="animtest"></div>

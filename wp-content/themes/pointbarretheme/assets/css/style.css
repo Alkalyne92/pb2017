@@ -138,49 +138,53 @@ color 				: red;
 
 }
 
+
+
+
+/* ---------- NAVIGATION ----*/
+
 .nav-wrap
 {
 	position: absolute;
-	right: -800px;
+    /* float: right; */
+    right: 0px;
+    border: solid;
+    width: auto;
+    height: 100vh;
+    font-size: 3em;
+    font-family: 'Grifo';
+    background: white;
+    padding: 60px;
+    display 		: flex;
+	flex-direction : column;
 }
+
+.nav-wrap div
+{
+	width: auto;
+}
+
 .nav {
 	list-style 		: none;
 	float 			: right;
 }
 .nav li {
 	display 		: inline;
-	
 }
 
+/*
 .nav li a {
 	display 		: block;
 	margin-left 	: 30px;
-	font-size 		: 4em;
+	
 	line-height 	: 1.5em; 
 	text-align 		: right; 
+	font-family 	: Grifo !important;
+
 }
-
-.nav-primary {
-	padding 		: 0em;
-	width 			: auto; 
-	height 			: 100vh;
-	text-align 		: right; 
-	background-color: white;
-	padding 		: 60px 100px 0px 0px; 
-}
+*/
 
 
-.nav-primary li {
-	display 		: inline; color: grey;
-	font-size 		: 0.8em;
-	font-family 	: Sul Sans;
-	font-weight 	: 300;
-	}
-
-
-.nav-primary .active {
-	color 			: black;
-}
 
 
 
@@ -188,7 +192,7 @@ color 				: red;
 #nav-projets {
 color               : white;
 position            : absolute;
-right                : 0%;
+right               : 0%;
 transform           : translateX(-50%);
 bottom              : 30vh;
 text-align          : right;
@@ -211,11 +215,8 @@ webkit-transition    : all 0.2s ease;
 
 
 
-div#bouchon
-{
-	width 			: 100%;
-	height 			: 140px;
-}
+
+/* ---------- ANIMATION CSS LOGO ----*/
 
 div#animationzone
 {	
@@ -235,6 +236,12 @@ div.animtest
 	left: 100px;
 	animation: logoanim 6s ease infinite;
 }
+
+
+
+
+
+/* ---------- PROJET - CONTAINER / WRAPPER ----*/
 
 .fullscreenproject
 {
@@ -258,6 +265,10 @@ article.projet
 	transform 	 	: translateX(-50%) translateY(-50%);
 	text-align 	 	: center;
 }
+
+
+
+/* ---------- QUOTE LANDING PAGE ----*/
 
 div#homecontainer
 {
@@ -294,7 +305,9 @@ div#prescontainer
 	flex 			: 1;
 }
 
-/* ---------- CITATION ----*/
+
+
+/* ---------- QUOTE ----*/
 p#quote
 {
 	margin: 0;
@@ -476,9 +489,9 @@ div.projetsolo .grostitre h2 {
 	font-family 	: Grifo;
 	font-weight 	: 600;
 	margin-bottom 	: 20px;
-	margin-top: 12%;
-	margin-left: -50px;
-	text-shadow: 1px 1px #ffffff;
+	margin-top 		: 12%;
+	margin-left 	: -50px;
+	text-shadow 	: 1px 1px #ffffff;
 }
 
 div.projetsolo .grostitre p {
@@ -497,19 +510,17 @@ div.projetsolowrapper .titlecontainer
 	transform-origin: left;
 	text-align 		: left;
 	width 			: auto;
-	padding: 10px;
+	padding 		: 10px;
 }
 
 
 div.projetsolowrapper:nth-child(even) .titlecontainer
 {
-
 	left 	 	 	: -60px;
 }
 
 div.projetsolowrapper:nth-child(odd) .titlecontainer
 {
-
 	right 			: -60px;
 	transform-origin: right;
 }
@@ -527,6 +538,8 @@ div.projetsolowrapper .titlewrapper
 }
 
 
+
+/* ---------- OVERLAY ----*/
 
 div.titleoverlay
 {
