@@ -175,13 +175,16 @@ $(document).ready(function()
 					$this.addClass('open');
 				}
 			}
+
 			// PARALLAX POUR LES THUMBNAIL DES PROJETS
+
 			var on = $this.offset().top - $(window).height();
 			var off = $this.offset().top + $this.height();
 			if ($(window).scrollTop() > on && $(window).scrollTop() < off)
 			{
 				$this.css('background-position-y', ($(window).scrollTop() - on)/(off - on)*100 + '%');
 			}
+
 		});
 	})
 
