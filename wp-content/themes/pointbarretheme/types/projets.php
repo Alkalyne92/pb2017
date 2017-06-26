@@ -24,7 +24,7 @@ function register_projets()
 
 	$args = array(
 		'labels'             => $labels,
-        'description'        => 'Nos projets vraiment très stylés',
+        'description'        => 'Les projets de qualitey',
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
@@ -46,7 +46,7 @@ function register_projets()
 		'show_ui' => true,
 		'show_admin_column' => true,
 		'query_var' => true,
-		'rewrite' => array('slug' => 'projet'),
+		'rewrite' => array('slug' => 'citation'),
 		));
 
 	register_post_type( 'projets', $args );

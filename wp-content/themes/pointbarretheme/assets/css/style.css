@@ -1,23 +1,5 @@
-/*
-Theme Name: Theme Point-Barre 2017
-Author: Point-Barre
-Description: Coucou c’est nous
-Version: 0.0.1
-Tags:
-*/
-
-
 @import url("animations.css");
 @import url("fonts.css");
-
-@keyframes logoanim
-{
-	0% {border-radius: 50%; transform: translateY(-50%);}
-	30% {border-radius: 50%; transform: translateY(-50%);}
-	50% {border-radius: 0%; transform: translateY(-50%) rotate(90deg);}
-	80% {border-radius: 0%; transform: translateY(-50%) rotate(90deg);}
-	100% {border-radius: 50%; transform: translateY(-50%) rotate(180deg);}
-}
 
 *, *::before, *::after {
 margin           : 0px;
@@ -290,28 +272,45 @@ webkit-transition    : all 0.2s ease;
 
 /* ---------- ANIMATION CSS LOGO ----*/
 
-div#animationzone
-{	
-	position 		: absolute;
-	width 			: auto;
-	height 			: 100%;
-	/*background-color: orange;*/
-}
-
-div.animtest
+div.animzone
 {
 	position: absolute;
-	background-color: rgb(81, 0, 255);
-	width: 20px;
-	height: 20px;
 	top: 60px;
 	left: 100px;
-	animation: logoanim 6s ease infinite;
+	width: auto;
+	height: auto;
 }
 
+div.anim
+{
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgb(81, 0, 255);
+	border-radius: 100%;
+	overflow: hidden;
+}
 
+div.back
+{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-150%, -50%);
+	width: 20px;
+	height: 20px;
+	background-color: rgb(81, 0, 255);
+}
 
-
+div.stroke
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 0px;
+	height: 2px;
+	background-color: white;
+}
 
 /* ---------- PROJET - CONTAINER / WRAPPER ----*/
 

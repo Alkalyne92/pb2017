@@ -19,19 +19,19 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'pb2017');
+define('DB_NAME', 'votre_nom_de_bdd');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'root');
+define('DB_USER', 'votre_utilisateur_de_bdd');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'votre_mdp_de_bdd');
 
 /** Adresse de l’hébergement MySQL. */
 define('DB_HOST', 'localhost');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** Type de collation de la base de données.
   * N’y touchez que si vous savez ce que vous faites.
@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '|9N#T_m!]6R[/7e=(4AOwd:zSo6|AnEN%k(*{PRPsxOB}<1~czc[DjOkbVQibHx~');
-define('SECURE_AUTH_KEY',  '#4,nd8L*u7r<~JLL<1]]IA;MT:i~IYH~lTf[CzI}kVySWmb{&_dpP;4=|ciXsq12');
-define('LOGGED_IN_KEY',    't9pd5|@$#}j`#TMPY4sSAC*t!nTmLj-Oo-~ywnX&a^> +^JN!Bt#9ONo[6@A{TrM');
-define('NONCE_KEY',        'm0Y@,n_$*{*h~}VFRykvGBdZ]-u6|{[G$=i,Qm@AkkYa-/&zg3}(aW)y+#if<G$7');
-define('AUTH_SALT',        'jO4p#&9LN}]jDKRCz2Kp;(c qhxeP0g}bI<Jg)BQSOVbA8.#WB1HgN^`Oa~(<X*Z');
-define('SECURE_AUTH_SALT', '1E5;6HD4f{.8G.1-Po5<N 5Qf2+U? uP8()y]FhzQlrAx2nGi-A,(9Nwdj+b#677');
-define('LOGGED_IN_SALT',   'VLxY,O<1~?Xc`6!{(tOU>[!y75G)E%<2pDRz0Iup;xV-]Qe*_)R*Fz&THjjahD1G');
-define('NONCE_SALT',       'fI#QaRU&0 ]m}x`_4^^;tY)ravos,&UO3tn:G(uFoI89c>-qD6jo;H?G?o=zxN2Q');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 /**#@-*/
 
 /**
@@ -82,11 +82,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
-define('FS_METHOD', 'direct');
-
-// Empêche que Visual Composer soit tout pété
-define(‘CONCATENATE_SCRIPTS’, false );
+define('WP_DEBUG', false);
 
 /* C’est tout, ne touchez pas à ce qui suit ! */
 

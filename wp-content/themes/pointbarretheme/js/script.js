@@ -1,5 +1,73 @@
 $(document).ready(function()
 {
+
+	// LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION
+	// LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION
+	// LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION
+	// LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION
+	// LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION LOGO ANIMATION
+
+	$('.animzone').mouseenter(function()
+	{
+		$all = $(this);
+		$('.back').velocity(
+		{
+			translateX: ['-50%', '-150%'],
+			translateY: ['-50%', '-50%'],
+		},
+		{
+			duration: 200,
+			easing: 'ease-out',
+			complete: function()
+			{
+				$('.stroke').delay(50).animate(
+				{
+					'width' : '25px'
+				}, 200, function()
+				{
+					$all.velocity(
+					{
+						rotateZ: '-45deg'
+					},
+					{
+						duration: 200,
+						easing: 'ease-out'
+					})
+				})
+			}
+		})
+	})
+
+	$('.animzone').mouseleave(function()
+	{
+		$(this).velocity(
+		{
+			rotateZ: '0deg'
+		},
+		{
+			duration: 200,
+			easing: 'ease-out',
+			complete: function()
+			{
+				$('.stroke').delay(50).animate(
+				{
+					'width' : '0px'
+				}, 200, function()
+				{
+					$('.back').velocity(
+					{
+						translateX: ['-150%', '-50%'],
+						translateY: ['-50%', '-50%'],
+					},
+					{
+						duration: 200,
+						easing: 'ease-out',
+					})
+				})
+			}
+		})
+	})
+
 	// NAV OPENING/CLOSING
 
 	$('#hamburger').mouseenter(function()
@@ -131,45 +199,6 @@ $('.nav-wrap').mouseleave(function()
 		});
 	});
 
-	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
-	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
-	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
-
-	$('.projetsolowrapper').mouseover(function(e)
-	{
-		$this = $(this);
-		$this.find('.titlecontainer').stop().animate(
-		{
-			'opacity' : '0',
-		}, 300);
-		$this.find('.encart').stop().animate(
-		{
-			'opacity' : '0',
-		}, 300);
-		$this.find('.rollover').stop().animate(
-		{
-			'opacity' : '1'
-		}, 300);
-		revealFxGrow($this);
-	});
-
-	$('.projetsolowrapper').mouseout(function(e)
-	{
-		$this = $(this);
-		$this.find('.titlecontainer').stop().animate(
-		{
-			'opacity' : '1',
-		}, 300);
-		$this.find('.encart').stop().animate(
-		{
-			'opacity' : '1',
-		}, 300);
-		$this.find('.rollover').stop().animate(
-		{
-			'opacity' : '0'
-		}, 300);
-	});
-
 	// FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW FX GROW
 
 	// SPLIT WORDS
@@ -259,4 +288,43 @@ $('.nav-wrap').mouseleave(function()
 		else imageDefer.resolve();
 		return imageDefer.promise();
 	}
+
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
+
+	$('.projetsolowrapper').mouseenter(function(e)
+	{
+		$this = $(this);
+		$this.find('.titlecontainer').stop().animate(
+		{
+			'opacity' : '0',
+		}, 300);
+		$this.find('.encart').stop().animate(
+		{
+			'opacity' : '0',
+		}, 300);
+		$this.find('.rollover').stop().animate(
+		{
+			'opacity' : '1'
+		}, 300);
+		revealFxGrow($('.rollover'));
+	});
+
+	$('.projetsolowrapper').mouseout(function(e)
+	{
+		$this = $(this);
+		$this.find('.titlecontainer').stop().animate(
+		{
+			'opacity' : '1',
+		}, 300);
+		$this.find('.encart').stop().animate(
+		{
+			'opacity' : '1',
+		}, 300);
+		$this.find('.rollover').stop().animate(
+		{
+			'opacity' : '0'
+		}, 300);
+	});
 });

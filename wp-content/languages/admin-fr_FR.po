@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-15 06:56:04+0000\n"
+"PO-Revision-Date: 2017-06-26 08:32:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +40,7 @@ msgstr "Cette fonctionnalité est en voie de devenir une de nos préférées. Qu
 
 #: wp-admin/about.php:147
 msgid "Did you know that WordPress has a thriving offline community with groups meeting regularly in more than 400 cities around the world? WordPress now draws your attention to the events that help you continue improving your WordPress skills, meet friends, and, of course, publish!"
-msgstr "Saviez-vous que WordPress a une communauté hors ligne prospère avec des groupes qui se réunissent régulièrement dans plus de 400 villes à travers le monde ? WordPress peut maintenant attirer votre attention sur les événements qui vous aident à continuer à améliorer vos compétences WordPress, à rencontrer des amis et, bien sûr, à publier !"
+msgstr "Saviez-vous que WordPress a une communauté hors ligne prospère avec des groupes qui se réunissent régulièrement dans plus de 400 villes à travers le monde ? WordPress peut maintenant attirer votre attention sur les évènements qui vous aident à continuer à améliorer vos compétences WordPress, à rencontrer des amis et, bien sûr, à publier !"
 
 #: wp-admin/about.php:126
 msgid "Have you ever tried updating a link, or the text around a link, and found you can&#8217;t seem to edit it correctly? When you edit the text after the link, your new text also ends up linked. Or you edit the text in the link, but your text ends up outside of it. This can be frustrating! With link boundaries, a great new feature, the process is streamlined and your links will work well. You’ll be happier. We promise."
@@ -2981,7 +2981,7 @@ msgstr "Bienvenue dans la très célèbre installation en 5 minutes de WordPress
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:582
 msgid "<strong>Compatible</strong> with your version of WordPress"
-msgstr "<strong>Compatible</strong> avec votre WordPress"
+msgstr "<strong>Compatible</strong> avec votre version de WordPress"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:580
 msgid "<strong>Incompatible</strong> with your version of WordPress"
@@ -6417,7 +6417,7 @@ msgstr "&laquo;&nbsp;Press This&nbsp;&raquo; est un bookmarklet qui vous facilit
 
 #: wp-admin/includes/upgrade.php:242
 msgid "Sample Page"
-msgstr "Page d&rsquo;exemple"
+msgstr "Page d’exemple"
 
 #. translators: Default page slug
 #: wp-admin/includes/upgrade.php:244
@@ -6448,7 +6448,7 @@ msgid ""
 "\n"
 "As a new WordPress user, you should go to <a href=\"%s\">your dashboard</a> to delete this page and create new pages for your content. Have fun!"
 msgstr ""
-"Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page &laquo;&nbsp;À Propos&nbsp;&raquo; qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n"
+"Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n"
 "\n"
 "<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et ceci est mon blog. J’habite à Bordeaux, j’ai un super chien qui s’appelle Russell, et j’aime la vodka-ananas (ainsi que perdre mon temps à regarder la pluie tomber).</blockquote>\n"
 "\n"

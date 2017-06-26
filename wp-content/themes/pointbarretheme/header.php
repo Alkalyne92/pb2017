@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 
 	<title>Point-Barre 2017</title>
-	<link href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/style.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,8 +39,12 @@
 					?>
 						
 			</div>
-
-		<div class="animtest"></div>
+		<div class="animzone">
+			<div class="anim">
+				<div class="back"></div>
+			</div>
+			<div class="stroke"></div>
+		</div>
 	</div> 
 	<div class="container">
 			<div class="rotulus">

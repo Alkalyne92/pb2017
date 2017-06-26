@@ -36,7 +36,7 @@ function register_citations()
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'author', 'custom-fields', 'thumbnail', 'excerpt', 'comments' ),
-		'taxonomies' => array( 'category', 'post_tag' ),
+		'taxonomies' 		 => array( 'category', 'post_tag' ),
 
 	);
 
