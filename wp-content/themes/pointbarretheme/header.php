@@ -22,9 +22,9 @@
 	
 	<div id="header" class="blog-masthead">
 			<div id="hamburger">
-			  <i></i>
-			  <i></i>
-			  <i></i>
+			  <i id="1"></i>
+			  <i id="2"></i>
+			  <i id="3"></i>
 			</div>
 			<div class="container nav-wrap">
 
