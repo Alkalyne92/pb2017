@@ -273,69 +273,38 @@ webkit-transition    : all 0.2s ease;
 
 /* ---------- ANIMATION CSS LOGO ----*/
 
-div.animzone
+#Layer_1
 {
 	position: absolute;
+	left: 100px;
+	top: 60px;
+	transform: translate(50%, 50%);
+	opacity: 0;
+}
+
+#trigger
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: yellow;
 	top: 60px;
 	left: 100px;
-	width: auto;
-	height: auto;
+	transform: scale(1.8);
+	opacity: 0;
 }
 
-div.anim
-{
-	width: 20px;
-	height: 20px;
-	border: 2px solid rgb(81, 0, 255);
-	border-radius: 100%;
-	overflow: hidden;
-}
-
-div.back
-{
-	position: relative;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 0px;
-	height: 0px;
-	background-color: rgb(81, 0, 255);
-	border-radius: 50%;
-}
-
-div.stroke
+.pointbarretypo
 {
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 0px;
-	height: 2px;
-	background-color: white;
-}
-
-/* ANIM 2 */
-
-div.planet
-{
-	position: absolute;
-	top: 60px;
-	left: 200px;
-	width: 20px;
-	height: 20px;
-	background-color: rgb(81, 0, 255);
-	border-radius: 50%;
-}
-
-div.satellite
-{
-	left: 207px;
-	top: 67px;
-	width: 6px;
-	height: 6px;
-	background-color: red;
-	position: absolute;
-	border-radius: 50%;
+	top: 72px;
+	left: 150px;
+	color: #ABABAB;
+	font-family: 'Sul Sans';
+	font-size: 1em;
+	transform: translateY(-50%);
+	margin-top: 20px;
+	opacity: 0;
 }
 
 /* ---------- PROJET - CONTAINER / WRAPPER ----*/

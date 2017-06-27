@@ -21,30 +21,21 @@
 <body>
 	
 	<div id="header" class="blog-masthead">
-			<div id="hamburger">
-			  <i id="1"></i>
-			  <i id="2"></i>
-			  <i id="3"></i>
-			</div>
-			<div class="container nav-wrap">
+		<div id="hamburger">
+		 	<i id="1"></i>
+			<i id="2"></i>
+			<i id="3"></i>
+		</div>
+		<div class="container nav-wrap">
 
 				    <?php 
 						$pages = get_pages(); 
-						foreach ( $pages as $page )
+						foreach ($pages as $page)
 						{
 						    echo "<div class='nav-item'> <p class='souligney'>" . $page->post_title .  "</p></div>";
- 
-						    
 						}
 					?>
 						
-			</div>
-		<!-- anim 1 -->
-		<div class="animzone">
-			<div class="anim">
-				<div class="back"></div>
-			</div>
-			<div class="stroke"></div>
 		</div>
 		<div class="send">
 			<div class="send-indicator">
@@ -59,6 +50,8 @@
 				<i class="fa fa-check sent-icon"></i>
 			</button>
 		</div>
+		<div id="trigger"></div>
+		<p class="pointbarretypo">Point &mdash; Barre</p>
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
 			<defs>
 			    <filter id="goo">
@@ -71,6 +64,18 @@
 			      	<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
 			    </filter>
 			</defs>
+		</svg>
+		<?xml version="1.0" encoding="utf-8"?>
+		<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+		<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="19.006px" height="19.006px" viewBox="0 0 19.006 19.006" enable-background="new 0 0 19.006 19.006" xml:space="preserve">
+			<path fill="rgb(81, 0, 255)" d="M2.243,14.711c0.504,0.078,1.016-0.088,1.375-0.446L14.263,3.618c0.361-0.359,0.527-0.871,0.447-1.373
+		c-0.076-0.504-0.392-0.941-0.843-1.174c-3.687-1.91-8.14-1.22-11.079,1.719c-2.938,2.938-3.627,7.392-1.717,11.08
+		C1.305,14.318,1.741,14.633,2.243,14.711"/>
+			<path fill="rgb(81, 0, 255)" d="M15.389,4.743L4.743,15.388c-0.36,0.36-0.528,0.871-0.45,1.373c0.078,0.504,0.393,0.938,0.844,1.174
+		c3.689,1.91,8.143,1.222,11.08-1.717c2.938-2.938,3.627-7.39,1.72-11.082c-0.236-0.451-0.673-0.765-1.175-0.841
+		C16.258,4.218,15.746,4.384,15.389,4.743"/>
 		</svg>
 	</div> 
 	<div class="container">
