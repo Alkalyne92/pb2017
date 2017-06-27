@@ -12,17 +12,34 @@ $(document).ready(function()
 	// 	send();
 	// });
 
-	send();
-
 	$('#trigger').mouseenter(function()
 	{
-		stopnow();
-	})
+		$('.pointbarretypo').velocity(
+		{
+			opacity: ['1', '0'],
+			marginTop: ['0px', '20px']
+		}, 300, 'easeInOutExpo');
+	});
 
 	$('#trigger').mouseleave(function()
 	{
-		send();
+		$('.pointbarretypo').velocity(
+		{
+			opacity: ['0', '1'],
+			marginTop: ['20px', '0px']
+		}, 300, 'easeInOutExpo');
 	})
+
+	send();
+
+	setInterval(function()
+	{
+		send();
+		setTimeout(function()
+		{
+			stopnow();
+		}, 5000)
+	}, 10000);
 
 	function setFilter(filter)
 	{
@@ -46,14 +63,13 @@ $(document).ready(function()
 
 	function send()
 	{
-		if (locked) return;
-		locked = true;
-
-		$('.pointbarretypo').velocity(
+		if (locked)
 		{
-			opacity: ['0', '1'],
-			marginTop: ['20px', '0px']
-		}, 300, 'easeInOutExpo');
+			console.log("SEND() ALREAY RUNNING");
+			return;
+		}
+
+		locked = true;
 
 		TweenMax.to($sendIcon, 0.3,
 		{
@@ -73,7 +89,7 @@ $(document).ready(function()
 		$indicatorDots.each(function(i)
 		{
 			startCircleAnim($(this), 50, 0.1, 1+(i*0.2), 1.1+(i*0.3));
-		})
+		});
 	}
 
 	function stopnow()
@@ -89,12 +105,6 @@ $(document).ready(function()
 		setTimeout(function()
 		{
 			setGoo();
-
-			$('.pointbarretypo').velocity(
-			{
-				opacity: ['1', '0'],
-				marginTop: ['0px', '20px']
-			}, 300, 'easeInOutExpo');
 
 			TweenMax.fromTo($sentIcon, 1.5,
 			{

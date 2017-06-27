@@ -51,7 +51,7 @@
 			</button>
 		</div>
 		<div id="trigger"></div>
-		<p class="pointbarretypo">Point &mdash; Barre</p>
+		<p class="pointbarretypo">POINT &mdash; BARRE</p>
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
 			<defs>
 			    <filter id="goo">
