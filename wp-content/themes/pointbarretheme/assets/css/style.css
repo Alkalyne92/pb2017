@@ -1,5 +1,6 @@
 @import url("animations.css");
 @import url("fonts.css");
+@import url("gooey.css");
 
 *, *::before, *::after {
 margin           : 0px;
@@ -295,10 +296,11 @@ div.back
 	position: relative;
 	left: 50%;
 	top: 50%;
-	transform: translate(-150%, -50%);
-	width: 20px;
-	height: 20px;
+	transform: translate(-50%, -50%);
+	width: 0px;
+	height: 0px;
 	background-color: rgb(81, 0, 255);
+	border-radius: 50%;
 }
 
 div.stroke
@@ -310,6 +312,30 @@ div.stroke
 	width: 0px;
 	height: 2px;
 	background-color: white;
+}
+
+/* ANIM 2 */
+
+div.planet
+{
+	position: absolute;
+	top: 60px;
+	left: 200px;
+	width: 20px;
+	height: 20px;
+	background-color: rgb(81, 0, 255);
+	border-radius: 50%;
+}
+
+div.satellite
+{
+	left: 207px;
+	top: 67px;
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	position: absolute;
+	border-radius: 50%;
 }
 
 /* ---------- PROJET - CONTAINER / WRAPPER ----*/

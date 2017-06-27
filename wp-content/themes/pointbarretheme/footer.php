@@ -43,6 +43,9 @@
 <script src="https://unpkg.com/flubber@0.3.0"></script>
 <script src="//cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="wp-content/themes/pointbarretheme/js/jquery-easing.js"></script>
+<script src="wp-content/themes/pointbarretheme/js/gooey.js"></script>
+<script src="wp-content/themes/pointbarretheme/js/TweenMax.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
