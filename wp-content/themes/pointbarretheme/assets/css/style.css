@@ -296,14 +296,15 @@ webkit-transition    : all 0.2s ease;
 .pointbarretypo
 {
 	position: absolute;
-	top: 76px;
+	top: 75px;
 	left: 150px;
 	color: #ABABAB;
 	font-family: 'Sul Sans';
-	font-size: 0.7em;
+	font-size: 0.5em;
 	transform: translateY(-50%);
 	margin-top: 20px;
 	opacity: 0;
+	letter-spacing: 3px;
 }
 
 /* ---------- PROJET - CONTAINER / WRAPPER ----*/

@@ -10,7 +10,7 @@ $(document).ready(function()
 	$('.animzone').mouseenter(function()
 	{
 		$all = $(this);
-		$('.back').velocity(
+		$('.back').stop().velocity(
 		{
 			width: ['20px', '0px'],
 			height: ['20px', '0px'],
@@ -40,7 +40,7 @@ $(document).ready(function()
 
 	$('.animzone').mouseleave(function()
 	{
-		$(this).velocity(
+		$(this).stop().velocity(
 		{
 			rotateZ: '0deg'
 		},
@@ -246,7 +246,6 @@ $('.nav-wrap').mouseleave(function()
 	var revealFxGrow = function(element)
 	{
 		var $words = element.find('.grow').children('div');
-		console.log(element, $words);
 		if ($words.length)
 		{
 			$words.each(function(i)
@@ -312,7 +311,7 @@ $('.nav-wrap').mouseleave(function()
 	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
 	// LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY LE ROLL-OVER DE QUALITEY
 
-	$('.projetsolowrapper').mouseenter(function(e)
+	$('.projetsolowrapper').mouseover(function(e)
 	{
 		$this = $(this);
 		$this.find('.titlecontainer').stop().animate(
