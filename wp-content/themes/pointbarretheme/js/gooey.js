@@ -31,6 +31,7 @@ $(document).ready(function()
 	})
 
 	send();
+	setTimeout(stopnow, 2500);
 
 	setInterval(function()
 	{
@@ -38,7 +39,7 @@ $(document).ready(function()
 		setTimeout(function()
 		{
 			stopnow();
-		}, 5000)
+		}, 2500)
 	}, 10000);
 
 	function setFilter(filter)

@@ -17,13 +17,13 @@ $(document).ready(function()
 		},
 		{
 			duration: 150,
-			easing: 'easeInOutExpo',
+			easing: 'easeInOutQuart',
 			complete: function()
 			{
 				$('.stroke').delay(50).animate(
 				{
 					'width' : '25px'
-				}, 150, 'easeInOutExpo', function()
+				}, 150, 'easeInOutQuart', function()
 				{
 					$all.delay(50).velocity(
 					{
@@ -31,7 +31,7 @@ $(document).ready(function()
 					},
 					{
 						duration: 150,
-						easing: 'easeInOutExpo'
+						easing: 'easeInOutQuart'
 					})
 				})
 			}
@@ -46,13 +46,13 @@ $(document).ready(function()
 		},
 		{
 			duration: 150,
-			easing: 'easeInOutExpo',
+			easing: 'easeInOutQuart',
 			complete: function()
 			{
 				$('.stroke').delay(50).animate(
 				{
 					'width' : '0px'
-				}, 150, 'easeInOutExpo', function()
+				}, 150, 'easeInOutQuart', function()
 				{
 					$('.back').delay(50).velocity(
 					{
@@ -61,7 +61,7 @@ $(document).ready(function()
 					},
 					{
 						duration: 150,
-						easing: 'easeInOutExpo',
+						easing: 'easeInOutQuart',
 					})
 				})
 			}
@@ -83,7 +83,7 @@ $(document).ready(function()
 			$this.stop().delay(100 * i).velocity(
 			{
 				translateX: ['25px', '0px'],	
-			}, 300, 'easeInOutExpo')
+			}, 300, 'easeInOutQuart')
 		})
 	})
 
@@ -126,7 +126,7 @@ $('.nav-wrap').mouseleave(function()
 		$(".projetsolowrapper").first().find('.projetsolo').animate(
 		{
 			width : '100%'
-		}, 300, 'easeInOutExpo', function()
+		}, 300, 'easeInOutQuart', function()
 		{
 			$(this).find('.projetsolooverlay').animate(
 			{
@@ -160,7 +160,7 @@ $('.nav-wrap').mouseleave(function()
 					{
 						'width' : '100%',
 
-					}, 300, 'easeInOutExpo', function()
+					}, 300, 'easeInOutQuart', function()
 					{
 						$(this).find('.projetsolooverlay').animate(
 						{
@@ -175,7 +175,7 @@ $('.nav-wrap').mouseleave(function()
 							},
 							{
 								duration: 300,
-								easing: 'easeInOutExpo',
+								easing: 'easeInOutQuart',
 								complete: function()
 								{	
 									if (i % 2 == 0) $(this).find('.titleoverlay').css('transform-origin', 'left');
@@ -186,7 +186,7 @@ $('.nav-wrap').mouseleave(function()
 									},
 									{
 										duration: 300,
-										easing: 'easeInOutExpo',
+										easing: 'easeInOutQuart',
 										complete: function()
 										{
 											$(this).css('display', 'none');
